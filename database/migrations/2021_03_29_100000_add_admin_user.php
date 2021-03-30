@@ -17,7 +17,7 @@ class AddAdminUser extends Migration
             'password' => bcrypt('password'),
         ]);
 
-        // $user->assignRole('Admin')->save();
+        $user->assignRole('Admin')->save();
 
         $user = EmailAddress::factory()->create([
             'email' => 'admin@example.com',
