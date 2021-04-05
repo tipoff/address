@@ -12,7 +12,7 @@
         "laravel/framework": "^8.12",
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
-        "tipoff/authorization": "^2.7"
+        "tipoff/authorization": "^2.7",
         "tipoff/addresses": "*"
     },
     "require-dev": {
