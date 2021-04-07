@@ -57,13 +57,10 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../../tipoff/laravel-google-api",
-            "symlink": true
-        },
-        {
-            "type": "path",
-            "url": "../../tipoff/addresses",
-            "symlink": true
+            "url": "../../tipoff/*",
+            "options": {
+                "symlink": true
+            }
         },
         {
             "type": "composer",
