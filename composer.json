@@ -14,7 +14,6 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/addresses": "*",
-        "tipoff/authorization": "^2.7",
         "tipoff/laravel-google-api": "*"
     },
     "require-dev": {
