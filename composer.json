@@ -14,8 +14,7 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/addresses": "*",
-        "tipoff/authorization": "^2.7",
-        "tipoff/laravel-google-api": "*"
+        "tipoff/authorization": "^2.7"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -61,10 +60,7 @@
         },
         {
             "type": "path",
-            "url": "../../tipoff/*",
-            "options": {
-                "symlink": true
-            }
+            "url": "../../tipoff/addresses"
         }
     ],
     "config": {
@@ -73,4 +69,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true}
+    "prefer-stable": true
+}
