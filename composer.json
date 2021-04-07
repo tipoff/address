@@ -6,13 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "dniccum/phone-number": "^1.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "tipoff/laravel-google-api": "*",
         "laravel/framework": "^8.12",
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.4",
         "tipoff/addresses": "*",
         "tipoff/authorization": "^2.7"
     },
@@ -57,6 +58,14 @@
         {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "path",
+            "url": "../../tipoff/addresses"
+        },
+        {
+            "type": "path",
+            "url": "../../tipoff/laravel-google-api"
         }
     ],
     "config": {

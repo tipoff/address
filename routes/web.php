@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Tipoff\Addresses\Http\Livewire\DomesticAddressSearchBar;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/test', DomesticAddressSearchBar::class);
+
+Route::get('/testjs', function () {
+    return view('test');   
 });
