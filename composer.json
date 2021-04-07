@@ -56,15 +56,15 @@
     },
     "repositories": [
         {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        },
+        {
             "type": "path",
             "url": "../../tipoff/*",
             "options": {
                 "symlink": true
             }
-        },
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
         }
     ],
     "config": {
