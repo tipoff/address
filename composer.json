@@ -9,13 +9,13 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "tipoff/laravel-google-api": "*",
         "laravel/framework": "^8.12",
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/addresses": "*",
-        "tipoff/authorization": "^2.7"
+        "tipoff/authorization": "^2.7",
+        "tipoff/laravel-google-api": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -56,16 +56,18 @@
     },
     "repositories": [
         {
+            "type": "path",
+            "url": "../../tipoff/laravel-google-api",
+            "symlink": true
+        },
+        {
+            "type": "path",
+            "url": "../../tipoff/addresses",
+            "symlink": true
+        },
+        {
             "type": "composer",
             "url": "https://nova.laravel.com"
-        },
-        {
-            "type": "path",
-            "url": "../../tipoff/addresses"
-        },
-        {
-            "type": "path",
-            "url": "../../tipoff/laravel-google-api"
         }
     ],
     "config": {
@@ -74,5 +76,4 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
-}
+    "prefer-stable": true}
