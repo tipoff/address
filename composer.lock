@@ -1834,16 +1834,16 @@
         },
         {
             "name": "laravel/cashier",
-            "version": "v12.11.0",
+            "version": "12.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/cashier-stripe.git",
-                "reference": "01613c324f8adcbd2f56484001f44800a6f2c023"
+                "reference": "e858a897901d5924aaa9e3d3054e9126ff841d88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/01613c324f8adcbd2f56484001f44800a6f2c023",
-                "reference": "01613c324f8adcbd2f56484001f44800a6f2c023",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/e858a897901d5924aaa9e3d3054e9126ff841d88",
+                "reference": "e858a897901d5924aaa9e3d3054e9126ff841d88",
                 "shasum": ""
             },
             "require": {
@@ -1862,7 +1862,7 @@
                 "php": "^7.2.5|^8.0",
                 "stripe/stripe-php": "^7.39",
                 "symfony/http-kernel": "^4.3|^5.0",
-                "symfony/intl": "^4.3|^5.0"
+                "symfony/polyfill-intl-icu": "^1.22.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
@@ -1872,6 +1872,7 @@
             "suggest": {
                 "ext-intl": "Allows for more locales besides the default \"en\" when formatting money values."
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1908,7 +1909,7 @@
                 "issues": "https://github.com/laravel/cashier/issues",
                 "source": "https://github.com/laravel/cashier"
             },
-            "time": "2021-03-30T21:19:50+00:00"
+            "time": "2021-04-08T15:54:12+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2080,17 +2081,17 @@
         },
         {
             "name": "laravel/nova",
-            "version": "3.22.0",
+            "version": "3.23.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:laravel/nova.git",
-                "reference": "41465f17785d04d946172f530bf01666e16dab0b"
+                "reference": "09eb76a742ba42a0cd0a165886f90f7f19160d17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-41465f17785d04d946172f530bf01666e16dab0b-zip-106723.zip",
-                "reference": "41465f17785d04d946172f530bf01666e16dab0b",
-                "shasum": "c521d11f45775d61b2b405b1cad8cd7aaabc9b4b"
+                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-09eb76a742ba42a0cd0a165886f90f7f19160d17-zip-61b826.zip",
+                "reference": "09eb76a742ba42a0cd0a165886f90f7f19160d17",
+                "shasum": "4ffe4bd0e76c12c04935a764b48982aff13b4af2"
             },
             "require": {
                 "brick/money": "^0.5.0",
@@ -2110,7 +2111,7 @@
                 "laravel/legacy-factories": "^1.0",
                 "laravel/nova-dusk-suite": "8.x-dev",
                 "mockery/mockery": "^1.3.3|^1.4.2",
-                "orchestra/testbench-dusk": "^6.5",
+                "orchestra/testbench-dusk": "^6.17",
                 "phpunit/phpunit": "^8.4",
                 "predis/predis": "^1.1"
             },
@@ -2142,7 +2143,8 @@
                 "dusk:prepare": [
                     "./vendor/bin/dusk-updater detect --auto-update",
                     "@php -r \"file_exists('phpunit.dusk.xml') || copy('phpunit.dusk.xml.dist', 'phpunit.dusk.xml'); \"",
-                    "@php -r \"if (file_exists('.env.dusk')) { copy('.env.dusk', 'vendor/laravel/nova-dusk-suite/.env'); } else { copy('.env.dusk.example', 'vendor/laravel/nova-dusk-suite/.env'); }\""
+                    "@php -r \"if (file_exists('.env.dusk')) { copy('.env.dusk', 'vendor/laravel/nova-dusk-suite/.env'); } else { copy('.env.dusk.example', 'vendor/laravel/nova-dusk-suite/.env'); }\"",
+                    "./vendor/bin/testbench-dusk package:discover"
                 ],
                 "dusk:assets": [
                     "yarn install",
@@ -2168,9 +2170,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/laravel/nova/tree/v3.22.0"
+                "source": "https://github.com/laravel/nova/tree/v3.23.1"
             },
-            "time": "2021-02-17T00:16:53+00:00"
+            "time": "2021-04-07T22:08:41+00:00"
         },
         {
             "name": "laravel/passport",
@@ -8140,7 +8142,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../tipoff/addresses",
-                "reference": "15bc48b3c4ee34444643ccd4cccfbcfdf86eeb23"
+                "reference": "e2d0ab55327e583d4e27ad064156fa6462b19926"
             },
             "require": {
                 "livewire/livewire": "^2.0",
@@ -8344,16 +8346,16 @@
         },
         {
             "name": "tipoff/support",
-            "version": "1.8.9",
+            "version": "1.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/support.git",
-                "reference": "8ae906637b5549868e6b0f290f0c732a1ab7ae5c"
+                "reference": "a442e3f29515bb86ca7571cfc57f5b67201d6795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/support/zipball/8ae906637b5549868e6b0f290f0c732a1ab7ae5c",
-                "reference": "8ae906637b5549868e6b0f290f0c732a1ab7ae5c",
+                "url": "https://api.github.com/repos/tipoff/support/zipball/a442e3f29515bb86ca7571cfc57f5b67201d6795",
+                "reference": "a442e3f29515bb86ca7571cfc57f5b67201d6795",
                 "shasum": ""
             },
             "require": {
@@ -8363,19 +8365,19 @@
                 "illuminate/collections": "^8.0",
                 "illuminate/contracts": "^8.0",
                 "illuminate/database": "^8.18",
-                "laravel/cashier": "^12.9",
+                "laravel/cashier": "^12.11.10",
                 "laravel/nova": "^3.22",
                 "marc-mabe/php-enum": "^4.4",
                 "nesbot/carbon": "^2.44",
                 "php": "^7.4|^8.0",
                 "spatie/laravel-fractal": "^5.8.1",
-                "spatie/laravel-package-tools": "^1.6.1"
+                "spatie/laravel-package-tools": "^1.6.2"
             },
             "require-dev": {
                 "orchestra/testbench": "^6.0",
                 "phpunit/phpunit": "^9.3",
-                "spatie/laravel-ray": "^1.17.1",
-                "vimeo/psalm": "^4.6.4"
+                "spatie/laravel-ray": "^1.17.2",
+                "vimeo/psalm": "^4.7.0"
             },
             "type": "library",
             "extra": {
@@ -8413,7 +8415,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/support/issues",
-                "source": "https://github.com/tipoff/support/tree/1.8.9"
+                "source": "https://github.com/tipoff/support/tree/1.8.10"
             },
             "funding": [
                 {
@@ -8421,7 +8423,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-07T01:31:57+00:00"
+            "time": "2021-04-08T15:01:21+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -8758,16 +8760,16 @@
         },
         {
             "name": "facade/flare-client-php",
-            "version": "1.5.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
-                "reference": "9dd6f2b56486d939c4467b3f35475d44af57cf17"
+                "reference": "f2b0969f2d9594704be74dbeb25b201570a98098"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/9dd6f2b56486d939c4467b3f35475d44af57cf17",
-                "reference": "9dd6f2b56486d939c4467b3f35475d44af57cf17",
+                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/f2b0969f2d9594704be74dbeb25b201570a98098",
+                "reference": "f2b0969f2d9594704be74dbeb25b201570a98098",
                 "shasum": ""
             },
             "require": {
@@ -8811,7 +8813,7 @@
             ],
             "support": {
                 "issues": "https://github.com/facade/flare-client-php/issues",
-                "source": "https://github.com/facade/flare-client-php/tree/1.5.0"
+                "source": "https://github.com/facade/flare-client-php/tree/1.6.1"
             },
             "funding": [
                 {
@@ -8819,26 +8821,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-31T07:32:54+00:00"
+            "time": "2021-04-08T08:50:01+00:00"
         },
         {
             "name": "facade/ignition",
-            "version": "2.7.0",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "bdc8b0b32c888f6edc838ca641358322b3d9506d"
+                "reference": "cb7f790e6306caeb4a9ffe21e59942b7128cc630"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/bdc8b0b32c888f6edc838ca641358322b3d9506d",
-                "reference": "bdc8b0b32c888f6edc838ca641358322b3d9506d",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/cb7f790e6306caeb4a9ffe21e59942b7128cc630",
+                "reference": "cb7f790e6306caeb4a9ffe21e59942b7128cc630",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "facade/flare-client-php": "^1.3.7",
+                "facade/flare-client-php": "^1.6",
                 "facade/ignition-contracts": "^1.0.2",
                 "filp/whoops": "^2.4",
                 "illuminate/support": "^7.0|^8.0",
@@ -8896,7 +8898,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-03-30T15:55:38+00:00"
+            "time": "2021-04-08T10:42:53+00:00"
         },
         {
             "name": "facade/ignition-contracts",

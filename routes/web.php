@@ -18,8 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', DomesticAddressSearchBar::class);
+Route::get('/test', function () {
+    return view('test');
+});
 
 Route::get('/testjs', function () {
-    return view('test');   
+    return view('testjs');   
 });

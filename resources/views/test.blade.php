@@ -2,6 +2,6 @@
 
 @section ('content')
 
-@include ('addresses::domestic-address-search-bar-javascript')
+@livewire ('addresses::domestic-address-search-bar')
 
 @endsection
