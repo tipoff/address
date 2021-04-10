@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea23beeacafa03c0c9f959a192791830",
+    "content-hash": "866132dd5d0dc7507f8c98f3410cb454",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -304,27 +304,187 @@
             "time": "2021-04-07T01:06:46+00:00"
         },
         {
-            "name": "defuse/php-encryption",
-            "version": "v2.2.1",
+            "name": "carlosocarvalho/flysystem-cloudinary",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620"
+                "url": "https://github.com/carlosocarvalho/flysystem-cloudinary.git",
+                "reference": "a5a56093b01762e4e945fbf5fdd9f441a30db275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/0f407c43b953d571421e0020ba92082ed5fb7620",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620",
+                "url": "https://api.github.com/repos/carlosocarvalho/flysystem-cloudinary/zipball/a5a56093b01762e4e945fbf5fdd9f441a30db275",
+                "reference": "a5a56093b01762e4e945fbf5fdd9f441a30db275",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "^1.16",
+                "league/flysystem": "^1.0.66",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/php-code-coverage": "^8.0.1",
+                "phpunit/phpunit": "9.0.*",
+                "symfony/var-dumper": "^3.4.39",
+                "vlucas/phpdotenv": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CarlosOCarvalho\\Flysystem\\Cloudinary\\": "src/",
+                    "CarlosOCarvalho\\Flysystem\\Cloudinary\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "carlosocarvalho",
+                    "email": "carlosocarvalho.com.br@gmail.com",
+                    "homepage": "https://carlosocarvalho.com.br",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Flysystem adapter for Cloudinary",
+            "homepage": "http://carlosocarvalho.github.io/flysystem-cloudinary",
+            "keywords": [
+                "Flysystem",
+                "cloudinary"
+            ],
+            "support": {
+                "issues": "https://github.com/carlosocarvalho/flysystem-cloudinary/issues",
+                "source": "https://github.com/carlosocarvalho/flysystem-cloudinary/tree/1.1.1"
+            },
+            "time": "2020-04-01T23:41:14+00:00"
+        },
+        {
+            "name": "cloudinary/cloudinary_php",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_php.git",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudinary",
+                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                }
+            ],
+            "description": "Cloudinary PHP SDK",
+            "homepage": "https://github.com/cloudinary/cloudinary_php",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "cloudinary",
+                "image management",
+                "sdk"
+            ],
+            "support": {
+                "email": "info@cloudinary.com",
+                "issues": "https://github.com/cloudinary/cloudinary_php/issues",
+                "source": "https://github.com/cloudinary/cloudinary_php/tree/1.20.0"
+            },
+            "time": "2021-01-13T18:40:23+00:00"
+        },
+        {
+            "name": "davidpiesse/nova-audio",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidpiesse/nova-audio.git",
+                "reference": "c3dabba202fbf50cf577315f30c94ee397f04d64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidpiesse/nova-audio/zipball/c3dabba202fbf50cf577315f30c94ee397f04d64",
+                "reference": "c3dabba202fbf50cf577315f30c94ee397f04d64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davidpiesse\\Audio\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Davidpiesse\\Audio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Audio Field for Laravel Nova",
+            "keywords": [
+                "audio",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/davidpiesse/nova-audio/issues",
+                "source": "https://github.com/davidpiesse/nova-audio/tree/master"
+            },
+            "time": "2018-08-30T20:12:06+00:00"
+        },
+        {
+            "name": "defuse/php-encryption",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/defuse/php-encryption.git",
+                "reference": "77880488b9954b7884c25555c2a0ea9e7053f9d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/77880488b9954b7884c25555c2a0ea9e7053f9d2",
+                "reference": "77880488b9954b7884c25555c2a0ea9e7053f9d2",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
                 "paragonie/random_compat": ">= 2",
-                "php": ">=5.4.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "nikic/php-parser": "^2.0|^3.0|^4.0",
-                "phpunit/phpunit": "^4|^5"
+                "phpunit/phpunit": "^4|^5|^6|^7|^8|^9"
             },
             "bin": [
                 "bin/generate-defuse-key"
@@ -366,9 +526,9 @@
             ],
             "support": {
                 "issues": "https://github.com/defuse/php-encryption/issues",
-                "source": "https://github.com/defuse/php-encryption/tree/master"
+                "source": "https://github.com/defuse/php-encryption/tree/v2.3.1"
             },
-            "time": "2018-07-24T23:27:56+00:00"
+            "time": "2021-04-09T23:57:26+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1057,6 +1217,153 @@
                 }
             ],
             "time": "2020-11-24T19:55:57+00:00"
+        },
+        {
+            "name": "drewroberts/blog",
+            "version": "4.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewroberts/blog.git",
+                "reference": "419545c2a9fa6521dff3109e5a7107ad83291e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewroberts/blog/zipball/419545c2a9fa6521dff3109e5a7107ad83291e24",
+                "reference": "419545c2a9fa6521dff3109e5a7107ad83291e24",
+                "shasum": ""
+            },
+            "require": {
+                "drewroberts/media": "^3.5.0",
+                "php": "^7.3|^8.0",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/seo": "^2.6.0",
+                "tipoff/support": "^2.0.1"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DrewRoberts\\Blog\\BlogServiceProvider"
+                    ],
+                    "aliases": {
+                        "LayoutManager": "DrewRoberts\\Blog\\Facade\\LayoutManager"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrewRoberts\\Blog\\": "src",
+                    "DrewRoberts\\Blog\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew Roberts",
+                    "email": "github@drewroberts.com",
+                    "homepage": "https://drewroberts.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel package for opinionated blog implementation",
+            "homepage": "https://github.com/drewroberts/blog",
+            "keywords": [
+                "blog",
+                "laravel",
+                "laravel package"
+            ],
+            "support": {
+                "issues": "https://github.com/drewroberts/blog/issues",
+                "source": "https://github.com/drewroberts/blog/tree/4.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/drewroberts",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-10T00:37:12+00:00"
+        },
+        {
+            "name": "drewroberts/media",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewroberts/media.git",
+                "reference": "daf260c219789e89ac1365637344a38c6d2aae00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewroberts/media/zipball/daf260c219789e89ac1365637344a38c6d2aae00",
+                "reference": "daf260c219789e89ac1365637344a38c6d2aae00",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "^1.20",
+                "php": "^7.4|^8.0",
+                "silvanite/nova-field-cloudinary": "^1.3.2",
+                "spatie/eloquent-sortable": "^3.11.0",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/laravel-google-api": "^2.0.0",
+                "tipoff/support": "^2.0.0"
+            },
+            "require-dev": {
+                "php-mock/php-mock-mockery": "^1.3.0",
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DrewRoberts\\Media\\MediaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Media": "DrewRoberts\\Media\\MediaFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrewRoberts\\Media\\": "src",
+                    "DrewRoberts\\Media\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew Roberts",
+                    "email": "github@drewroberts.com",
+                    "homepage": "https://drewroberts.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for opinionated usage of Media (images & videos)",
+            "homepage": "https://github.com/drewroberts/media",
+            "keywords": [
+                "laravel",
+                "laravel package",
+                "media"
+            ],
+            "support": {
+                "issues": "https://github.com/drewroberts/media/issues",
+                "source": "https://github.com/drewroberts/media/tree/3.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/drewroberts",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T16:59:51+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5106,6 +5413,70 @@
             "time": "2020-06-01T09:10:00+00:00"
         },
         {
+            "name": "silvanite/nova-field-cloudinary",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Silvanite/nova-field-cloudinary.git",
+                "reference": "29230a728a7bcb29aa366171ae0c7658fde981ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Silvanite/nova-field-cloudinary/zipball/29230a728a7bcb29aa366171ae0c7658fde981ae",
+                "reference": "29230a728a7bcb29aa366171ae0c7658fde981ae",
+                "shasum": ""
+            },
+            "require": {
+                "carlosocarvalho/flysystem-cloudinary": "^1.0",
+                "davidpiesse/nova-audio": "^0.0.1",
+                "laravel/framework": ">=5.0.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": ">=3.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Silvanite\\NovaFieldCloudinary\\Providers\\PackageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src-php/helpers.php"
+                ],
+                "psr-4": {
+                    "Silvanite\\NovaFieldCloudinary\\": "src-php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Mark",
+                    "email": "m2de@outlook.com"
+                }
+            ],
+            "description": "A Laravel Nova Image Field with Flysystem Adapter for storing and retrieving media from Cloudinary",
+            "keywords": [
+                "cloudinary",
+                "field",
+                "images",
+                "laravel",
+                "media",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/Silvanite/nova-field-cloudinary/issues",
+                "source": "https://github.com/Silvanite/nova-field-cloudinary/tree/master"
+            },
+            "time": "2020-01-20T17:01:48+00:00"
+        },
+        {
             "name": "skagarwal/google-places-api",
             "version": "1.7.2",
             "source": {
@@ -5171,6 +5542,74 @@
                 "source": "https://github.com/SachinAgarwal1337/google-places-api/tree/1.7.2"
             },
             "time": "2016-02-05T00:00:00+00:00"
+        },
+        {
+            "name": "spatie/eloquent-sortable",
+            "version": "3.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/eloquent-sortable.git",
+                "reference": "b06fa886559f8d40e31c8a69fd32bd45401dc5da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/eloquent-sortable/zipball/b06fa886559f8d40e31c8a69fd32bd45401dc5da",
+                "reference": "b06fa886559f8d40e31c8a69fd32bd45401dc5da",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\EloquentSortable\\EloquentSortableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\EloquentSortable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be"
+                }
+            ],
+            "description": "Sortable behaviour for eloquent models",
+            "homepage": "https://github.com/spatie/eloquent-sortable",
+            "keywords": [
+                "behaviour",
+                "eloquent",
+                "laravel",
+                "model",
+                "sort",
+                "sortable"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/eloquent-sortable/issues",
+                "source": "https://github.com/spatie/eloquent-sortable/tree/3.11.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-18T00:32:12+00:00"
         },
         {
             "name": "spatie/fractalistic",
@@ -8083,6 +8522,62 @@
             "time": "2021-03-28T09:42:18+00:00"
         },
         {
+            "name": "tcdent/php-restclient",
+            "version": "0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tcdent/php-restclient.git",
+                "reference": "4522e8518eaef770d715977fcb45f187f8ad7499"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tcdent/php-restclient/zipball/4522e8518eaef770d715977fcb45f187f8ad7499",
+                "reference": "4522e8518eaef770d715977fcb45f187f8ad7499",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php": ">=5.5.7",
+                "phpunit/phpunit": ">=4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "restclient.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Travis Dent",
+                    "email": "tcdent@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A generic REST API client for PHP",
+            "homepage": "http://github.com/tcdent/php-restclient",
+            "keywords": [
+                "api",
+                "client",
+                "curl",
+                "json",
+                "rest",
+                "xml"
+            ],
+            "support": {
+                "issues": "http://github.com/tcdent/php-restclient/issues",
+                "source": "https://github.com/tcdent/php-restclient/tree/master"
+            },
+            "time": "2017-09-07T20:44:36+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -8341,6 +8836,217 @@
                 }
             ],
             "time": "2021-04-09T16:23:18+00:00"
+        },
+        {
+            "name": "tipoff/laravel-serpapi",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/laravel-serpapi.git",
+                "reference": "9dbe770e07c91e6582933785eeff9086d05a3f9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/laravel-serpapi/zipball/9dbe770e07c91e6582933785eeff9086d05a3f9d",
+                "reference": "9dbe770e07c91e6582933785eeff9086d05a3f9d",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.7",
+                "php": "^7.4|^8.0",
+                "tcdent/php-restclient": "^0.1.7",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/support": "^2.0.0"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\LaravelSerpapi\\LaravelSerpapiServiceProvider"
+                    ],
+                    "aliases": {
+                        "SerpApiSearch": "Tipoff\\LaravelSerpapi\\Facades\\SerpApiSearchFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\LaravelSerpapi\\": "src",
+                    "Tipoff\\LaravelSerpapi\\Database\\Factories\\": "database/factories",
+                    "Tipoff\\LaravelSerpapi\\Database\\Seeders\\": "database/seeders"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for tracking Google laravel-serpapi",
+            "homepage": "https://github.com/tipoff/laravel-serpapi",
+            "keywords": [
+                "laravel-serpapi",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/laravel-serpapi/issues",
+                "source": "https://github.com/tipoff/laravel-serpapi/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T16:33:11+00:00"
+        },
+        {
+            "name": "tipoff/locations",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/locations.git",
+                "reference": "1923dab5d4b429653b5dd7d6905a412caedd426f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/1923dab5d4b429653b5dd7d6905a412caedd426f",
+                "reference": "1923dab5d4b429653b5dd7d6905a412caedd426f",
+                "shasum": ""
+            },
+            "require": {
+                "drewroberts/blog": "^4.4.0",
+                "php": "^7.4|^8.0",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/support": "^2.0.1"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\Locations\\LocationsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\Locations\\": "src",
+                    "Tipoff\\Locations\\Database\\Factories\\": "database/factories",
+                    "Tipoff\\Locations\\Database\\Seeders\\": "database/seeders"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for locations in markets",
+            "homepage": "https://github.com/tipoff/locations",
+            "keywords": [
+                "locations",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/locations/issues",
+                "source": "https://github.com/tipoff/locations/tree/2.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T19:18:26+00:00"
+        },
+        {
+            "name": "tipoff/seo",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/seo.git",
+                "reference": "9a2d81cc972e437e34fa84802d177e73cd786b69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/9a2d81cc972e437e34fa84802d177e73cd786b69",
+                "reference": "9a2d81cc972e437e34fa84802d177e73cd786b69",
+                "shasum": ""
+            },
+            "require": {
+                "drewroberts/media": "^3.5.0",
+                "php": "^7.3|^8.0",
+                "tipoff/addresses": "^2.8.0",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/laravel-google-api": "^2.0.0",
+                "tipoff/laravel-serpapi": "^2.0.0",
+                "tipoff/support": "^2.0.0"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\Seo\\SeoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\Seo\\": "src",
+                    "Tipoff\\Seo\\Database\\Factories\\": "database/factories"
+                },
+                "files": [
+                    "src/Helpers/GetFaviconUrl.php",
+                    "src/Helpers/ParseUrl.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for tracking SEO keywords",
+            "homepage": "https://github.com/tipoff/seo",
+            "keywords": [
+                "seo",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/seo/issues",
+                "source": "https://github.com/tipoff/seo/tree/2.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T17:07:26+00:00"
         },
         {
             "name": "tipoff/support",
@@ -8823,16 +9529,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.8.2",
+            "version": "2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "cb7f790e6306caeb4a9ffe21e59942b7128cc630"
+                "reference": "a8201d51aae83addceaef9344592a3b068b5d64d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/cb7f790e6306caeb4a9ffe21e59942b7128cc630",
-                "reference": "cb7f790e6306caeb4a9ffe21e59942b7128cc630",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/a8201d51aae83addceaef9344592a3b068b5d64d",
+                "reference": "a8201d51aae83addceaef9344592a3b068b5d64d",
                 "shasum": ""
             },
             "require": {
@@ -8896,7 +9602,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-04-08T10:42:53+00:00"
+            "time": "2021-04-09T20:45:59+00:00"
         },
         {
             "name": "facade/ignition-contracts",
