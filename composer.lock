@@ -8632,16 +8632,16 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/addresses.git",
-                "reference": "ca583f2b39243aea770a49d790112303174f8e5f"
+                "reference": "d3bec3079587e4530fe96703d9d7f37e5abec482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/addresses/zipball/ca583f2b39243aea770a49d790112303174f8e5f",
-                "reference": "ca583f2b39243aea770a49d790112303174f8e5f",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/d3bec3079587e4530fe96703d9d7f37e5abec482",
+                "reference": "d3bec3079587e4530fe96703d9d7f37e5abec482",
                 "shasum": ""
             },
             "require": {
@@ -8649,7 +8649,7 @@
                 "php": "^7.4|^8.0",
                 "tipoff/authorization": "^2.8.0",
                 "tipoff/laravel-google-api": "^2.0.0",
-                "tipoff/support": "^2.0.0"
+                "tipoff/support": "^2.0.1"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8687,7 +8687,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/addresses/issues",
-                "source": "https://github.com/tipoff/addresses/tree/2.8.0"
+                "source": "https://github.com/tipoff/addresses/tree/2.8.1"
             },
             "funding": [
                 {
@@ -8695,7 +8695,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T16:44:54+00:00"
+            "time": "2021-04-10T01:33:40+00:00"
         },
         {
             "name": "tipoff/authorization",
@@ -8977,26 +8977,26 @@
         },
         {
             "name": "tipoff/seo",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/seo.git",
-                "reference": "9a2d81cc972e437e34fa84802d177e73cd786b69"
+                "reference": "937162b17471f4a0f434470f7727075f2b1a84f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/seo/zipball/9a2d81cc972e437e34fa84802d177e73cd786b69",
-                "reference": "9a2d81cc972e437e34fa84802d177e73cd786b69",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/937162b17471f4a0f434470f7727075f2b1a84f3",
+                "reference": "937162b17471f4a0f434470f7727075f2b1a84f3",
                 "shasum": ""
             },
             "require": {
                 "drewroberts/media": "^3.5.0",
                 "php": "^7.3|^8.0",
-                "tipoff/addresses": "^2.8.0",
+                "tipoff/addresses": "^2.8.1",
                 "tipoff/authorization": "^2.8.0",
                 "tipoff/laravel-google-api": "^2.0.0",
                 "tipoff/laravel-serpapi": "^2.0.0",
-                "tipoff/support": "^2.0.0"
+                "tipoff/support": "^2.0.1"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -9038,7 +9038,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/seo/issues",
-                "source": "https://github.com/tipoff/seo/tree/2.6.0"
+                "source": "https://github.com/tipoff/seo/tree/2.6.1"
             },
             "funding": [
                 {
@@ -9046,7 +9046,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T17:07:26+00:00"
+            "time": "2021-04-10T01:44:24+00:00"
         },
         {
             "name": "tipoff/support",
