@@ -531,43 +531,6 @@
             "time": "2021-04-09T23:57:26+00:00"
         },
         {
-            "name": "dnoegel/php-xdg-base-dir",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~7.0|~6.0|~5.0|~4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "XdgBaseDir\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "implementation of xdg base directory specification for php",
-            "support": {
-                "issues": "https://github.com/dnoegel/php-xdg-base-dir/issues",
-                "source": "https://github.com/dnoegel/php-xdg-base-dir/tree/v0.1.1"
-            },
-            "time": "2019-12-04T15:06:13+00:00"
-        },
-        {
             "name": "doctrine/cache",
             "version": "1.10.2",
             "source": {
@@ -1693,7 +1656,7 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.167.0",
+            "version": "v0.168.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
@@ -1728,7 +1691,7 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.167.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.168.0"
             },
             "time": "2021-03-22T11:26:04+00:00"
         },
@@ -2145,12 +2108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/cashier-stripe.git",
-                "reference": "e858a897901d5924aaa9e3d3054e9126ff841d88"
+                "reference": "610aa3632b35377dbd49a3d243c8b3ab2b0be1e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/e858a897901d5924aaa9e3d3054e9126ff841d88",
-                "reference": "e858a897901d5924aaa9e3d3054e9126ff841d88",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/610aa3632b35377dbd49a3d243c8b3ab2b0be1e4",
+                "reference": "610aa3632b35377dbd49a3d243c8b3ab2b0be1e4",
                 "shasum": ""
             },
             "require": {
@@ -2216,7 +2179,7 @@
                 "issues": "https://github.com/laravel/cashier/issues",
                 "source": "https://github.com/laravel/cashier"
             },
-            "time": "2021-04-08T15:54:12+00:00"
+            "time": "2021-04-12T12:18:30+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5076,20 +5039,19 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a395af46999a12006213c0c8346c9445eb31640c"
+                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a395af46999a12006213c0c8346c9445eb31640c",
-                "reference": "a395af46999a12006213c0c8346c9445eb31640c",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e4573f47750dd6c92dca5aee543fa77513cbd8d3",
+                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3",
                 "shasum": ""
             },
             "require": {
-                "dnoegel/php-xdg-base-dir": "0.1.*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
@@ -5146,9 +5108,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.7"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.8"
             },
-            "time": "2021-03-14T02:14:56+00:00"
+            "time": "2021-04-10T16:23:39+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8632,16 +8594,16 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "2.8.2",
+            "version": "2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/addresses.git",
-                "reference": "9d89665942af4f4b78c5a4772672b5af842adc64"
+                "reference": "ac1ef5e4870bf157ffcfa325eed7234957cccc11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/addresses/zipball/9d89665942af4f4b78c5a4772672b5af842adc64",
-                "reference": "9d89665942af4f4b78c5a4772672b5af842adc64",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/ac1ef5e4870bf157ffcfa325eed7234957cccc11",
+                "reference": "ac1ef5e4870bf157ffcfa325eed7234957cccc11",
                 "shasum": ""
             },
             "require": {
@@ -8687,7 +8649,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/addresses/issues",
-                "source": "https://github.com/tipoff/addresses/tree/2.8.2"
+                "source": "https://github.com/tipoff/addresses/tree/2.8.3"
             },
             "funding": [
                 {
@@ -8695,7 +8657,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-10T03:59:28+00:00"
+            "time": "2021-04-11T17:40:33+00:00"
         },
         {
             "name": "tipoff/authorization",
@@ -8910,16 +8872,16 @@
         },
         {
             "name": "tipoff/locations",
-            "version": "2.9.4",
+            "version": "2.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/locations.git",
-                "reference": "88cd7a54cb8376c4b50029c98a5241eca36e68f3"
+                "reference": "5594fd63965f2c8ba64e6f5ef894fe3fe76390fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/locations/zipball/88cd7a54cb8376c4b50029c98a5241eca36e68f3",
-                "reference": "88cd7a54cb8376c4b50029c98a5241eca36e68f3",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/5594fd63965f2c8ba64e6f5ef894fe3fe76390fb",
+                "reference": "5594fd63965f2c8ba64e6f5ef894fe3fe76390fb",
                 "shasum": ""
             },
             "require": {
@@ -8965,7 +8927,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/locations/issues",
-                "source": "https://github.com/tipoff/locations/tree/2.9.4"
+                "source": "https://github.com/tipoff/locations/tree/2.9.7"
             },
             "funding": [
                 {
@@ -8973,26 +8935,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-10T15:25:32+00:00"
+            "time": "2021-04-11T18:16:53+00:00"
         },
         {
             "name": "tipoff/seo",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/seo.git",
-                "reference": "937162b17471f4a0f434470f7727075f2b1a84f3"
+                "reference": "89e1cbe2bacdc5af11e3dda1c559cf4b568a237f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/seo/zipball/937162b17471f4a0f434470f7727075f2b1a84f3",
-                "reference": "937162b17471f4a0f434470f7727075f2b1a84f3",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/89e1cbe2bacdc5af11e3dda1c559cf4b568a237f",
+                "reference": "89e1cbe2bacdc5af11e3dda1c559cf4b568a237f",
                 "shasum": ""
             },
             "require": {
                 "drewroberts/media": "^3.5.0",
                 "php": "^7.3|^8.0",
-                "tipoff/addresses": "^2.8.1",
+                "tipoff/addresses": "^2.8.3",
                 "tipoff/authorization": "^2.8.0",
                 "tipoff/laravel-google-api": "^2.0.0",
                 "tipoff/laravel-serpapi": "^2.0.0",
@@ -9038,7 +9000,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/seo/issues",
-                "source": "https://github.com/tipoff/seo/tree/2.6.1"
+                "source": "https://github.com/tipoff/seo/tree/2.6.2"
             },
             "funding": [
                 {
@@ -9046,7 +9008,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-10T01:44:24+00:00"
+            "time": "2021-04-11T18:12:41+00:00"
         },
         {
             "name": "tipoff/support",
@@ -9464,16 +9426,16 @@
         },
         {
             "name": "facade/flare-client-php",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
-                "reference": "f2b0969f2d9594704be74dbeb25b201570a98098"
+                "reference": "6bf380035890cb0a09b9628c491ae3866b858522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/f2b0969f2d9594704be74dbeb25b201570a98098",
-                "reference": "f2b0969f2d9594704be74dbeb25b201570a98098",
+                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/6bf380035890cb0a09b9628c491ae3866b858522",
+                "reference": "6bf380035890cb0a09b9628c491ae3866b858522",
                 "shasum": ""
             },
             "require": {
@@ -9517,7 +9479,7 @@
             ],
             "support": {
                 "issues": "https://github.com/facade/flare-client-php/issues",
-                "source": "https://github.com/facade/flare-client-php/tree/1.6.1"
+                "source": "https://github.com/facade/flare-client-php/tree/1.7.0"
             },
             "funding": [
                 {
@@ -9525,7 +9487,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-08T08:50:01+00:00"
+            "time": "2021-04-12T09:30:36+00:00"
         },
         {
             "name": "facade/ignition",
