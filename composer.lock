@@ -1183,24 +1183,23 @@
         },
         {
             "name": "drewroberts/blog",
-            "version": "4.4.2",
+            "version": "4.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drewroberts/blog.git",
-                "reference": "419545c2a9fa6521dff3109e5a7107ad83291e24"
+                "reference": "b5f011687dec01ead6094d5384e066a6cfb4255f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drewroberts/blog/zipball/419545c2a9fa6521dff3109e5a7107ad83291e24",
-                "reference": "419545c2a9fa6521dff3109e5a7107ad83291e24",
+                "url": "https://api.github.com/repos/drewroberts/blog/zipball/b5f011687dec01ead6094d5384e066a6cfb4255f",
+                "reference": "b5f011687dec01ead6094d5384e066a6cfb4255f",
                 "shasum": ""
             },
             "require": {
-                "drewroberts/media": "^3.5.0",
                 "php": "^7.3|^8.0",
                 "tipoff/authorization": "^2.8.0",
-                "tipoff/seo": "^2.6.0",
-                "tipoff/support": "^2.0.1"
+                "tipoff/seo": "^2.7.0",
+                "tipoff/support": "^2.0.2"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -1243,7 +1242,7 @@
             ],
             "support": {
                 "issues": "https://github.com/drewroberts/blog/issues",
-                "source": "https://github.com/drewroberts/blog/tree/4.4.2"
+                "source": "https://github.com/drewroberts/blog/tree/4.4.4"
             },
             "funding": [
                 {
@@ -1251,7 +1250,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-10T00:37:12+00:00"
+            "time": "2021-04-13T02:34:35+00:00"
         },
         {
             "name": "drewroberts/media",
@@ -5914,16 +5913,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.76.0",
+            "version": "v7.77.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "47e66d4186712be33c593fe820dccf270a04d5d6"
+                "reference": "f6724447481f6fb8c2e714165e092adad9ca470a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/47e66d4186712be33c593fe820dccf270a04d5d6",
-                "reference": "47e66d4186712be33c593fe820dccf270a04d5d6",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/f6724447481f6fb8c2e714165e092adad9ca470a",
+                "reference": "f6724447481f6fb8c2e714165e092adad9ca470a",
                 "shasum": ""
             },
             "require": {
@@ -5969,9 +5968,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.76.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.77.0"
             },
-            "time": "2021-03-22T16:50:21+00:00"
+            "time": "2021-04-12T17:19:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8594,16 +8593,16 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "2.8.3",
+            "version": "2.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/addresses.git",
-                "reference": "ac1ef5e4870bf157ffcfa325eed7234957cccc11"
+                "reference": "e132418c3aa5187e620a3567702cbd4c7cca9520"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/addresses/zipball/ac1ef5e4870bf157ffcfa325eed7234957cccc11",
-                "reference": "ac1ef5e4870bf157ffcfa325eed7234957cccc11",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/e132418c3aa5187e620a3567702cbd4c7cca9520",
+                "reference": "e132418c3aa5187e620a3567702cbd4c7cca9520",
                 "shasum": ""
             },
             "require": {
@@ -8611,7 +8610,7 @@
                 "php": "^7.4|^8.0",
                 "tipoff/authorization": "^2.8.0",
                 "tipoff/laravel-google-api": "^2.0.0",
-                "tipoff/support": "^2.0.1"
+                "tipoff/support": "^2.0.2"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8649,7 +8648,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/addresses/issues",
-                "source": "https://github.com/tipoff/addresses/tree/2.8.3"
+                "source": "https://github.com/tipoff/addresses/tree/2.8.5"
             },
             "funding": [
                 {
@@ -8657,7 +8656,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-11T17:40:33+00:00"
+            "time": "2021-04-13T02:23:53+00:00"
         },
         {
             "name": "tipoff/authorization",
@@ -8872,23 +8871,23 @@
         },
         {
             "name": "tipoff/locations",
-            "version": "2.9.7",
+            "version": "2.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/locations.git",
-                "reference": "5594fd63965f2c8ba64e6f5ef894fe3fe76390fb"
+                "reference": "40252f81eed8b720e1dd9bdcae2c7766418b649f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/locations/zipball/5594fd63965f2c8ba64e6f5ef894fe3fe76390fb",
-                "reference": "5594fd63965f2c8ba64e6f5ef894fe3fe76390fb",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/40252f81eed8b720e1dd9bdcae2c7766418b649f",
+                "reference": "40252f81eed8b720e1dd9bdcae2c7766418b649f",
                 "shasum": ""
             },
             "require": {
-                "drewroberts/blog": "^4.4.2",
+                "drewroberts/blog": "^4.4.4",
                 "php": "^7.4|^8.0",
                 "tipoff/authorization": "^2.8.0",
-                "tipoff/support": "^2.0.1"
+                "tipoff/support": "^2.0.2"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8927,7 +8926,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/locations/issues",
-                "source": "https://github.com/tipoff/locations/tree/2.9.7"
+                "source": "https://github.com/tipoff/locations/tree/2.9.9"
             },
             "funding": [
                 {
@@ -8935,30 +8934,30 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-11T18:16:53+00:00"
+            "time": "2021-04-13T02:36:27+00:00"
         },
         {
             "name": "tipoff/seo",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/seo.git",
-                "reference": "89e1cbe2bacdc5af11e3dda1c559cf4b568a237f"
+                "reference": "65b67b62d7bf0c19a540ebc257d354535b7e590a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/seo/zipball/89e1cbe2bacdc5af11e3dda1c559cf4b568a237f",
-                "reference": "89e1cbe2bacdc5af11e3dda1c559cf4b568a237f",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/65b67b62d7bf0c19a540ebc257d354535b7e590a",
+                "reference": "65b67b62d7bf0c19a540ebc257d354535b7e590a",
                 "shasum": ""
             },
             "require": {
                 "drewroberts/media": "^3.5.0",
                 "php": "^7.3|^8.0",
-                "tipoff/addresses": "^2.8.3",
+                "tipoff/addresses": "^2.8.5",
                 "tipoff/authorization": "^2.8.0",
                 "tipoff/laravel-google-api": "^2.0.0",
                 "tipoff/laravel-serpapi": "^2.0.0",
-                "tipoff/support": "^2.0.1"
+                "tipoff/support": "^2.0.2"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -9000,7 +8999,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/seo/issues",
-                "source": "https://github.com/tipoff/seo/tree/2.6.2"
+                "source": "https://github.com/tipoff/seo/tree/2.7.0"
             },
             "funding": [
                 {
@@ -9008,20 +9007,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-11T18:12:41+00:00"
+            "time": "2021-04-13T02:33:04+00:00"
         },
         {
             "name": "tipoff/support",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/support.git",
-                "reference": "0b4e5f5080f83da02689596edde5d7af00e751fd"
+                "reference": "17fa7bf0e677a3073475ad268128c3a6cb665349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/support/zipball/0b4e5f5080f83da02689596edde5d7af00e751fd",
-                "reference": "0b4e5f5080f83da02689596edde5d7af00e751fd",
+                "url": "https://api.github.com/repos/tipoff/support/zipball/17fa7bf0e677a3073475ad268128c3a6cb665349",
+                "reference": "17fa7bf0e677a3073475ad268128c3a6cb665349",
                 "shasum": ""
             },
             "require": {
@@ -9081,7 +9080,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/support/issues",
-                "source": "https://github.com/tipoff/support/tree/2.0.1"
+                "source": "https://github.com/tipoff/support/tree/2.0.2"
             },
             "funding": [
                 {
@@ -9089,7 +9088,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T18:47:12+00:00"
+            "time": "2021-04-12T14:08:11+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
