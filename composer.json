@@ -12,9 +12,8 @@
         "laravel/framework": "^8.12",
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
-        "tipoff/addresses": "^2.8",
-        "tipoff/authorization": "^2.8",
-        "tipoff/locations": "^2.9"
+        "tipoff/authorization": "^2.8.1",
+        "tipoff/locations": "^2.10.0"
     },
     "require-dev": {
         "facade/ignition": "^2.8.2",
