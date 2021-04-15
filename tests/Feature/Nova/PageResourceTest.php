@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Nova;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -29,7 +29,7 @@ class PageResourceTest extends TestCase
     public function index_page()
     {
         $this->actingAs($this->getAdmin());
-        $this->get(self::NOVA_ROUTE.'page')->assertStatus(200);  
+        $this->get(self::NOVA_ROUTE.'page')->assertStatus(200);
     }
 
     /** @test */
@@ -46,7 +46,7 @@ class PageResourceTest extends TestCase
         $this->actingAs($this->getAdmin());
         $page = $this->getPage();
         $this->get(self::NOVA_ROUTE.'pages/{$page->id}/update-fields')->assertStatus(200);
-        
+
     }
 
     /** @test */
