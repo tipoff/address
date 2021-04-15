@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'email' => [
+            'driver' => 'session',
+            'provider' => 'email',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -69,6 +74,10 @@ return [
         'users' => [
             'driver' => 'tipoff',
             'model' => Tipoff\Authorization\Models\User::class,
+        ],
+        'email' => [
+            'driver' => 'eloquent',
+            'model' => Tipoff\Authorization\Models\EmailAddress::class,
         ],
     ],
 
