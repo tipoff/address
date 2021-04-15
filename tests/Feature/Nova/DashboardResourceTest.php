@@ -18,7 +18,7 @@ class DashboardResourceTest extends TestCase
      * @dataProvider dataProviderForIndexByRole
      * @test
      */
-    public function index(?string $role, bool $hasAccess)
+    public function index(string $role, bool $hasAccess)
     {
         $this->actingAs($this->getUserByRole($role));
         $hasAccess ? $this->get('/admin')->assertStatus(200) : $this->get('/admin')->assertStatus(403);
