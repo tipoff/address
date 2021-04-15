@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Nova;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -18,11 +18,11 @@ class DashboardResourceTest extends TestCase
      * @dataProvider dataProviderForIndexByRole
      * @test
      */
-    public function index(?string $role, bool $hasAccess)
+    public function index(string $role, bool $hasAccess)
     {
         $this->actingAs($this->getUserByRole($role));
-        $hasAccess ? $this->get('/admin')->assertStatus(200) : $this->get('/admin')->assertStatus(403);  
-        $hasAccess ? $this->get('/admin/dashboards/')->assertStatus(200) : $this->get('/admin/dashboards/')->assertStatus(403);  
+        $hasAccess ? $this->get('/admin')->assertStatus(200) : $this->get('/admin')->assertStatus(403);
+        $hasAccess ? $this->get('/admin/dashboards/')->assertStatus(200) : $this->get('/admin/dashboards/')->assertStatus(403);
     }
 
     public function dataProviderForIndexByRole()
