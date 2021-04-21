@@ -16,7 +16,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        @stack ('addresses::domestic-address-search-bar-javascript')
+        @stack ('scripts')
     </head>
     <body class="font-sans antialiased">
         
