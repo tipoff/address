@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a593f17f6e38f6683405e475938de7bb",
+    "content-hash": "0d2a03708bea90230c2eb04d7c8f4063",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,21 +64,20 @@
         },
         {
             "name": "beberlei/assert",
-            "version": "v3.3.0",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/assert.git",
-                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab"
+                "reference": "5e721d7e937ca3ba2cdec1e1adf195f9e5188372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/5367e3895976b49704ae671f75bc5f0ba1b986ab",
-                "reference": "5367e3895976b49704ae671f75bc5f0ba1b986ab",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/5e721d7e937ca3ba2cdec1e1adf195f9e5188372",
+                "reference": "5e721d7e937ca3ba2cdec1e1adf195f9e5188372",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
-                "ext-intl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-simplexml": "*",
@@ -89,6 +88,9 @@
                 "phpstan/phpstan": "*",
                 "phpunit/phpunit": ">=6.0.0",
                 "yoast/phpunit-polyfills": "^0.1.0"
+            },
+            "suggest": {
+                "ext-intl": "Needed to allow Assertion::count(), Assertion::isCountable(), Assertion::minCount(), and Assertion::maxCount() to operate on ResourceBundles"
             },
             "type": "library",
             "autoload": {
@@ -123,9 +125,9 @@
             ],
             "support": {
                 "issues": "https://github.com/beberlei/assert/issues",
-                "source": "https://github.com/beberlei/assert/tree/v3.3.0"
+                "source": "https://github.com/beberlei/assert/tree/v3.3.1"
             },
-            "time": "2020-11-13T20:02:54+00:00"
+            "time": "2021-04-18T20:11:03+00:00"
         },
         {
             "name": "brick/math",
@@ -304,6 +306,167 @@
             "time": "2021-04-07T01:06:46+00:00"
         },
         {
+            "name": "carlosocarvalho/flysystem-cloudinary",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carlosocarvalho/flysystem-cloudinary.git",
+                "reference": "a5a56093b01762e4e945fbf5fdd9f441a30db275"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carlosocarvalho/flysystem-cloudinary/zipball/a5a56093b01762e4e945fbf5fdd9f441a30db275",
+                "reference": "a5a56093b01762e4e945fbf5fdd9f441a30db275",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "^1.16",
+                "league/flysystem": "^1.0.66",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/php-code-coverage": "^8.0.1",
+                "phpunit/phpunit": "9.0.*",
+                "symfony/var-dumper": "^3.4.39",
+                "vlucas/phpdotenv": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CarlosOCarvalho\\Flysystem\\Cloudinary\\": "src/",
+                    "CarlosOCarvalho\\Flysystem\\Cloudinary\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "carlosocarvalho",
+                    "email": "carlosocarvalho.com.br@gmail.com",
+                    "homepage": "https://carlosocarvalho.com.br",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Flysystem adapter for Cloudinary",
+            "homepage": "http://carlosocarvalho.github.io/flysystem-cloudinary",
+            "keywords": [
+                "Flysystem",
+                "cloudinary"
+            ],
+            "support": {
+                "issues": "https://github.com/carlosocarvalho/flysystem-cloudinary/issues",
+                "source": "https://github.com/carlosocarvalho/flysystem-cloudinary/tree/1.1.1"
+            },
+            "time": "2020-04-01T23:41:14+00:00"
+        },
+        {
+            "name": "cloudinary/cloudinary_php",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_php.git",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "reference": "2a8e6ed5bc6cf024022c6fcc03b69e1ce92ccaab",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudinary",
+                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                }
+            ],
+            "description": "Cloudinary PHP SDK",
+            "homepage": "https://github.com/cloudinary/cloudinary_php",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "cloudinary",
+                "image management",
+                "sdk"
+            ],
+            "support": {
+                "email": "info@cloudinary.com",
+                "issues": "https://github.com/cloudinary/cloudinary_php/issues",
+                "source": "https://github.com/cloudinary/cloudinary_php/tree/1.20.0"
+            },
+            "time": "2021-01-13T18:40:23+00:00"
+        },
+        {
+            "name": "davidpiesse/nova-audio",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidpiesse/nova-audio.git",
+                "reference": "c3dabba202fbf50cf577315f30c94ee397f04d64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidpiesse/nova-audio/zipball/c3dabba202fbf50cf577315f30c94ee397f04d64",
+                "reference": "c3dabba202fbf50cf577315f30c94ee397f04d64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davidpiesse\\Audio\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Davidpiesse\\Audio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Audio Field for Laravel Nova",
+            "keywords": [
+                "audio",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/davidpiesse/nova-audio/issues",
+                "source": "https://github.com/davidpiesse/nova-audio/tree/master"
+            },
+            "time": "2018-08-30T20:12:06+00:00"
+        },
+        {
             "name": "defuse/php-encryption",
             "version": "v2.3.1",
             "source": {
@@ -370,104 +533,40 @@
             "time": "2021-04-09T23:57:26+00:00"
         },
         {
-            "name": "dniccum/phone-number",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dniccum/nova-phone-number.git",
-                "reference": "25f6b0d9c146955639ef1de33f77c71311737481"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dniccum/nova-phone-number/zipball/25f6b0d9c146955639ef1de33f77c71311737481",
-                "reference": "25f6b0d9c146955639ef1de33f77c71311737481",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/nova": "^3.9",
-                "php": ">=7.3.0",
-                "propaganistas/laravel-phone": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Dniccum\\PhoneNumber\\FieldServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dniccum\\PhoneNumber\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Doug Niccum",
-                    "email": "dniccumdesign@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A Laravel Nova phone number field with input masking and validation support.",
-            "keywords": [
-                "field",
-                "laravel",
-                "nova",
-                "number",
-                "phone"
-            ],
-            "support": {
-                "issues": "https://github.com/dniccum/nova-phone-number/issues",
-                "source": "https://github.com/dniccum/nova-phone-number/tree/v1.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/dniccum",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-12-16T15:51:05+00:00"
-        },
-        {
             "name": "doctrine/cache",
-            "version": "1.10.2",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "13e3381b25847283a91948d04640543941309727"
+                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/13e3381b25847283a91948d04640543941309727",
-                "reference": "13e3381b25847283a91948d04640543941309727",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
+                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
                 "shasum": ""
             },
             "require": {
                 "php": "~7.1 || ^8.0"
             },
             "conflict": {
-                "doctrine/common": ">2.2,<2.4"
+                "doctrine/common": ">2.2,<2.4",
+                "psr/cache": ">=3"
             },
             "require-dev": {
                 "alcaeus/mongo-php-adapter": "^1.1",
-                "doctrine/coding-standard": "^6.0",
+                "cache/integration-tests": "dev-master",
+                "doctrine/coding-standard": "^8.0",
                 "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^7.0",
-                "predis/predis": "~1.0"
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "predis/predis": "~1.0",
+                "psr/cache": "^1.0 || ^2.0",
+                "symfony/cache": "^4.4 || ^5.2"
             },
             "suggest": {
                 "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
@@ -514,7 +613,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.10.x"
+                "source": "https://github.com/doctrine/cache/tree/1.11.0"
             },
             "funding": [
                 {
@@ -530,20 +629,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-07T18:54:01+00:00"
+            "time": "2021-04-13T14:46:17+00:00"
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.13.0",
+            "version": "2.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "67d56d3203b33db29834e6b2fcdbfdc50535d796"
+                "reference": "c800380457948e65bbd30ba92cc17cda108bf8c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/67d56d3203b33db29834e6b2fcdbfdc50535d796",
-                "reference": "67d56d3203b33db29834e6b2fcdbfdc50535d796",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c800380457948e65bbd30ba92cc17cda108bf8c9",
+                "reference": "c800380457948e65bbd30ba92cc17cda108bf8c9",
                 "shasum": ""
             },
             "require": {
@@ -558,6 +657,7 @@
                 "jetbrains/phpstorm-stubs": "2020.2",
                 "phpstan/phpstan": "0.12.81",
                 "phpunit/phpunit": "^7.5.20|^8.5|9.5.0",
+                "squizlabs/php_codesniffer": "3.6.0",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
                 "vimeo/psalm": "4.6.4"
             },
@@ -620,7 +720,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/2.13.0"
+                "source": "https://github.com/doctrine/dbal/tree/2.13.1"
             },
             "funding": [
                 {
@@ -636,7 +736,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-28T18:10:53+00:00"
+            "time": "2021-04-17T17:30:19+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1084,6 +1184,81 @@
             "time": "2020-11-24T19:55:57+00:00"
         },
         {
+            "name": "drewroberts/media",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewroberts/media.git",
+                "reference": "daf260c219789e89ac1365637344a38c6d2aae00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewroberts/media/zipball/daf260c219789e89ac1365637344a38c6d2aae00",
+                "reference": "daf260c219789e89ac1365637344a38c6d2aae00",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "^1.20",
+                "php": "^7.4|^8.0",
+                "silvanite/nova-field-cloudinary": "^1.3.2",
+                "spatie/eloquent-sortable": "^3.11.0",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/laravel-google-api": "^2.0.0",
+                "tipoff/support": "^2.0.0"
+            },
+            "require-dev": {
+                "php-mock/php-mock-mockery": "^1.3.0",
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DrewRoberts\\Media\\MediaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Media": "DrewRoberts\\Media\\MediaFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrewRoberts\\Media\\": "src",
+                    "DrewRoberts\\Media\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew Roberts",
+                    "email": "github@drewroberts.com",
+                    "homepage": "https://drewroberts.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for opinionated usage of Media (images & videos)",
+            "homepage": "https://github.com/drewroberts/media",
+            "keywords": [
+                "laravel",
+                "laravel package",
+                "media"
+            ],
+            "support": {
+                "issues": "https://github.com/drewroberts/media/issues",
+                "source": "https://github.com/drewroberts/media/tree/3.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/drewroberts",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T16:59:51+00:00"
+        },
+        {
             "name": "egulias/email-validator",
             "version": "2.1.25",
             "source": {
@@ -1150,6 +1325,54 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "emilianotisato/nova-google-autocomplete-field",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/emilianotisato/nova-google-autocomplete-field.git",
+                "reference": "88ad8050c9e4b6af09b5b0da5e4d9d87e25c4958"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/emilianotisato/nova-google-autocomplete-field/zipball/88ad8050c9e4b6af09b5b0da5e4d9d87e25c4958",
+                "reference": "88ad8050c9e4b6af09b5b0da5e4d9d87e25c4958",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "EmilianoTisato\\GoogleAutocomplete\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EmilianoTisato\\GoogleAutocomplete\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This Nova Package it's a Field that allows you to Autocomplete addresses with Google Place API and get the full metadata (lat and long, etc).",
+            "keywords": [
+                "Google Places Api",
+                "address autocomplete",
+                "field",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/emilianotisato/nova-google-autocomplete-field/issues",
+                "source": "https://github.com/emilianotisato/nova-google-autocomplete-field/tree/0.8.0"
+            },
+            "time": "2021-03-26T17:56:37+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1341,132 +1564,6 @@
             "time": "2020-10-22T13:57:20+00:00"
         },
         {
-            "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.21",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "272b8123ba7f1b7975620c6389e7206281b4a3ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/272b8123ba7f1b7975620c6389e7206281b4a3ce",
-                "reference": "272b8123ba7f1b7975620c6389e7206281b4a3ce",
-                "shasum": ""
-            },
-            "require": {
-                "giggsey/locale": "^1.7",
-                "php": ">=5.3.2",
-                "symfony/polyfill-mbstring": "^1.17"
-            },
-            "require-dev": {
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "^2.7",
-                "php-coveralls/php-coveralls": "^1.0|^2.0",
-                "symfony/console": "^2.8|^3.0",
-                "symfony/phpunit-bridge": "^4.2 || ^5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "libphonenumber\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "/src/data/",
-                    "/src/carrier/data/",
-                    "/src/geocoding/data/",
-                    "/src/timezone/data/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Joshua Gigg",
-                    "email": "giggsey@gmail.com",
-                    "homepage": "https://giggsey.com/"
-                }
-            ],
-            "description": "PHP Port of Google's libphonenumber",
-            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
-            "keywords": [
-                "geocoding",
-                "geolocation",
-                "libphonenumber",
-                "mobile",
-                "phonenumber",
-                "validation"
-            ],
-            "support": {
-                "irc": "irc://irc.appliedirc.com/lobby",
-                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
-                "source": "https://github.com/giggsey/libphonenumber-for-php"
-            },
-            "time": "2021-04-06T08:37:32+00:00"
-        },
-        {
-            "name": "giggsey/locale",
-            "version": "1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/Locale.git",
-                "reference": "b07f1eace8072ccc61445ad8fbd493ff9d783043"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/b07f1eace8072ccc61445ad8fbd493ff9d783043",
-                "reference": "b07f1eace8072ccc61445ad8fbd493ff9d783043",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "~2.7",
-                "php-coveralls/php-coveralls": "^1.0|^2.0",
-                "phpunit/phpunit": "^4.8|^5.0",
-                "symfony/console": "^2.8|^3.0|^4.0",
-                "symfony/filesystem": "^2.8|^3.0|^4.0",
-                "symfony/finder": "^2.8|^3.0|^4.0",
-                "symfony/process": "^2.8|^3.0|^4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Giggsey\\Locale\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joshua Gigg",
-                    "email": "giggsey@gmail.com",
-                    "homepage": "http://giggsey.com/"
-                }
-            ],
-            "description": "Locale functions required by libphonenumber-for-php",
-            "support": {
-                "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/master"
-            },
-            "time": "2020-07-07T11:16:24+00:00"
-        },
-        {
             "name": "google/apiclient",
             "version": "v2.9.1",
             "source": {
@@ -1537,16 +1634,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.168.0",
+            "version": "v0.170.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "46b71684a100f3d976e0321cf24f487b314add68"
+                "reference": "b45ddc3d82b2c8f328d869d55db88c1885d898ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/46b71684a100f3d976e0321cf24f487b314add68",
-                "reference": "46b71684a100f3d976e0321cf24f487b314add68",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/b45ddc3d82b2c8f328d869d55db88c1885d898ee",
+                "reference": "b45ddc3d82b2c8f328d869d55db88c1885d898ee",
                 "shasum": ""
             },
             "require": {
@@ -1572,22 +1669,22 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.168.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.170.0"
             },
-            "time": "2021-03-22T11:26:04+00:00"
+            "time": "2021-04-20T20:34:12+00:00"
         },
         {
             "name": "google/auth",
-            "version": "v1.15.0",
+            "version": "v1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "b346c07de6613e26443d7b4830e5e1933b830dc4"
+                "reference": "4e0c9367719df9703e96f5ad613041b87742471c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/b346c07de6613e26443d7b4830e5e1933b830dc4",
-                "reference": "b346c07de6613e26443d7b4830e5e1933b830dc4",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/4e0c9367719df9703e96f5ad613041b87742471c",
+                "reference": "4e0c9367719df9703e96f5ad613041b87742471c",
                 "shasum": ""
             },
             "require": {
@@ -1601,7 +1698,7 @@
             "require-dev": {
                 "guzzlehttp/promises": "0.1.1|^1.3",
                 "kelvinmo/simplejwt": "^0.2.5|^0.5.1",
-                "phpseclib/phpseclib": "^2",
+                "phpseclib/phpseclib": "^2.0.31",
                 "phpunit/phpunit": "^4.8.36|^5.7",
                 "sebastian/comparator": ">=1.2.3",
                 "squizlabs/php_codesniffer": "^3.5"
@@ -1629,9 +1726,9 @@
             "support": {
                 "docs": "https://googleapis.github.io/google-auth-library-php/master/",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.15.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.15.1"
             },
-            "time": "2021-02-05T20:50:04+00:00"
+            "time": "2021-04-21T17:42:05+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -2063,16 +2160,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.37.0",
+            "version": "v8.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cf4082973abc796ec285190f0603380021f6d26f"
+                "reference": "26a73532c54d2c090692bf2e3e64e449669053ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cf4082973abc796ec285190f0603380021f6d26f",
-                "reference": "cf4082973abc796ec285190f0603380021f6d26f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/26a73532c54d2c090692bf2e3e64e449669053ba",
+                "reference": "26a73532c54d2c090692bf2e3e64e449669053ba",
                 "shasum": ""
             },
             "require": {
@@ -2227,7 +2324,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-04-13T13:49:49+00:00"
+            "time": "2021-04-20T13:50:21+00:00"
         },
         {
             "name": "laravel/nova",
@@ -3048,63 +3145,6 @@
                 "source": "https://github.com/thephpleague/fractal/tree/0.19.2"
             },
             "time": "2020-01-24T23:17:29+00:00"
-        },
-        {
-            "name": "league/iso3166",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/iso3166.git",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/iso3166/zipball/9976d382f270ad3f3df8a68719beb7a7179ffa1e",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3|^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\ISO3166\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Bast",
-                    "email": "rob.bast@gmail.com"
-                }
-            ],
-            "description": "ISO 3166-1 PHP Library",
-            "homepage": "https://github.com/thephpleague/iso3166",
-            "keywords": [
-                "3166",
-                "3166-1",
-                "ISO 3166",
-                "countries",
-                "iso",
-                "library"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/iso3166/issues",
-                "source": "https://github.com/thephpleague/iso3166"
-            },
-            "time": "2020-12-05T06:50:42+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -4457,16 +4497,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d"
+                "reference": "d9615a6fb970d9933866ca8b4036ec3407b020b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
-                "reference": "d369510df0ebd5e1a5d0fe3d4d23c55fa87a403d",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d9615a6fb970d9933866ca8b4036ec3407b020b6",
+                "reference": "d9615a6fb970d9933866ca8b4036ec3407b020b6",
                 "shasum": ""
             },
             "require": {
@@ -4548,7 +4588,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.7"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.8"
             },
             "funding": [
                 {
@@ -4564,73 +4604,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-06T14:00:11+00:00"
-        },
-        {
-            "name": "propaganistas/laravel-phone",
-            "version": "4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Propaganistas/Laravel-Phone.git",
-                "reference": "6953b54542f530c75ab8eb953b38cca4bfdc5d88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Phone/zipball/6953b54542f530c75ab8eb953b38cca4bfdc5d88",
-                "reference": "6953b54542f530c75ab8eb953b38cca4bfdc5d88",
-                "shasum": ""
-            },
-            "require": {
-                "giggsey/libphonenumber-for-php": "^7.0|^8.0",
-                "illuminate/contracts": "^8.9",
-                "illuminate/support": "^8.0",
-                "illuminate/validation": "^8.0",
-                "league/iso3166": "^2.0|^3.0",
-                "php": "^7.3|^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "*",
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Propaganistas\\LaravelPhone\\PhoneServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Propaganistas\\LaravelPhone\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Propaganistas",
-                    "email": "Propaganistas@users.noreply.github.com"
-                }
-            ],
-            "description": "Adds phone number functionality to Laravel and Lumen based on Google's libphonenumber API.",
-            "keywords": [
-                "laravel",
-                "libphonenumber",
-                "lumen",
-                "phone",
-                "validation"
-            ],
-            "support": {
-                "issues": "https://github.com/Propaganistas/Laravel-Phone/issues",
-                "source": "https://github.com/Propaganistas/Laravel-Phone/tree/4.3.0"
-            },
-            "time": "2021-02-11T17:06:47+00:00"
+            "time": "2021-04-19T03:20:48+00:00"
         },
         {
             "name": "psr/cache",
@@ -5378,6 +5352,138 @@
             "time": "2020-06-01T09:10:00+00:00"
         },
         {
+            "name": "schulzefelix/laravel-search-console",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schulzefelix/laravel-search-console.git",
+                "reference": "9a55418af0f911875be0b39842355b266d24e6bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schulzefelix/laravel-search-console/zipball/9a55418af0f911875be0b39842355b266d24e6bc",
+                "reference": "9a55418af0f911875be0b39842355b266d24e6bc",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0",
+                "symfony/cache": "^4.3|^5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4.2",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SchulzeFelix\\SearchConsole\\SearchConsoleServiceProvider"
+                    ],
+                    "aliases": {
+                        "SearchConsole": "SchulzeFelix\\SearchConsole\\SearchConsoleFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SchulzeFelix\\SearchConsole\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Schulze",
+                    "email": "github@schulze.co",
+                    "homepage": "https://schulze.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package to retrieve data from Google Search Console",
+            "homepage": "https://github.com/schulzefelix/laravel-search-console",
+            "keywords": [
+                "google",
+                "laravel",
+                "laravel-search-console",
+                "search console",
+                "webmaster tools"
+            ],
+            "support": {
+                "issues": "https://github.com/schulzefelix/laravel-search-console/issues",
+                "source": "https://github.com/schulzefelix/laravel-search-console/tree/1.7.1"
+            },
+            "time": "2021-04-11T12:32:19+00:00"
+        },
+        {
+            "name": "silvanite/nova-field-cloudinary",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Silvanite/nova-field-cloudinary.git",
+                "reference": "29230a728a7bcb29aa366171ae0c7658fde981ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Silvanite/nova-field-cloudinary/zipball/29230a728a7bcb29aa366171ae0c7658fde981ae",
+                "reference": "29230a728a7bcb29aa366171ae0c7658fde981ae",
+                "shasum": ""
+            },
+            "require": {
+                "carlosocarvalho/flysystem-cloudinary": "^1.0",
+                "davidpiesse/nova-audio": "^0.0.1",
+                "laravel/framework": ">=5.0.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": ">=3.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Silvanite\\NovaFieldCloudinary\\Providers\\PackageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src-php/helpers.php"
+                ],
+                "psr-4": {
+                    "Silvanite\\NovaFieldCloudinary\\": "src-php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Mark",
+                    "email": "m2de@outlook.com"
+                }
+            ],
+            "description": "A Laravel Nova Image Field with Flysystem Adapter for storing and retrieving media from Cloudinary",
+            "keywords": [
+                "cloudinary",
+                "field",
+                "images",
+                "laravel",
+                "media",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/Silvanite/nova-field-cloudinary/issues",
+                "source": "https://github.com/Silvanite/nova-field-cloudinary/tree/master"
+            },
+            "time": "2020-01-20T17:01:48+00:00"
+        },
+        {
             "name": "skagarwal/google-places-api",
             "version": "1.7.2",
             "source": {
@@ -5443,6 +5549,133 @@
                 "source": "https://github.com/SachinAgarwal1337/google-places-api/tree/1.7.2"
             },
             "time": "2016-02-05T00:00:00+00:00"
+        },
+        {
+            "name": "spatie/data-transfer-object",
+            "version": "2.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/data-transfer-object.git",
+                "reference": "2625a59566804ec63f01947d85947336237cbda6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/data-transfer-object/zipball/2625a59566804ec63f01947d85947336237cbda6",
+                "reference": "2625a59566804ec63f01947d85947336237cbda6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "suggest": {
+                "phpstan/phpstan": "Take advantage of checkUninitializedProperties with \\Spatie\\DataTransferObject\\PHPstan\\PropertiesAreAlwaysInitializedExtension"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DataTransferObject\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Roose",
+                    "email": "brent@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data transfer objects with batteries included",
+            "homepage": "https://github.com/spatie/data-transfer-object",
+            "keywords": [
+                "data-transfer-object",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/data-transfer-object/issues",
+                "source": "https://github.com/spatie/data-transfer-object/tree/2.8.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/spatie",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-12T08:46:52+00:00"
+        },
+        {
+            "name": "spatie/eloquent-sortable",
+            "version": "3.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/eloquent-sortable.git",
+                "reference": "b06fa886559f8d40e31c8a69fd32bd45401dc5da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/eloquent-sortable/zipball/b06fa886559f8d40e31c8a69fd32bd45401dc5da",
+                "reference": "b06fa886559f8d40e31c8a69fd32bd45401dc5da",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\EloquentSortable\\EloquentSortableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\EloquentSortable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be"
+                }
+            ],
+            "description": "Sortable behaviour for eloquent models",
+            "homepage": "https://github.com/spatie/eloquent-sortable",
+            "keywords": [
+                "behaviour",
+                "eloquent",
+                "laravel",
+                "model",
+                "sort",
+                "sortable"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/eloquent-sortable/issues",
+                "source": "https://github.com/spatie/eloquent-sortable/tree/3.11.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-18T00:32:12+00:00"
         },
         {
             "name": "spatie/fractalistic",
@@ -5785,6 +6018,73 @@
             "time": "2020-11-03T13:23:06+00:00"
         },
         {
+            "name": "spatie/valuestore",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/valuestore.git",
+                "reference": "eafde51f0068bcbb605fdf589a952677ada74a33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/valuestore/zipball/eafde51f0068bcbb605fdf589a952677ada74a33",
+                "reference": "eafde51f0068bcbb605fdf589a952677ada74a33",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Valuestore\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jolita Grazyte",
+                    "email": "jolita@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily store some values",
+            "homepage": "https://github.com/spatie/valuestore",
+            "keywords": [
+                "json",
+                "spatie",
+                "valuestore"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/valuestore/issues",
+                "source": "https://github.com/spatie/valuestore/tree/1.2.5"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-30T16:21:03+00:00"
+        },
+        {
             "name": "stripe/stripe-php",
             "version": "v7.77.0",
             "source": {
@@ -5919,6 +6219,180 @@
                 }
             ],
             "time": "2021-03-09T12:30:35+00:00"
+        },
+        {
+            "name": "symfony/cache",
+            "version": "v5.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/cache.git",
+                "reference": "093d69bb10c959553c8beb828b8d4ea250a247dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/093d69bb10c959553c8beb828b8d4ea250a247dd",
+                "reference": "093d69bb10c959553c8beb828b8d4ea250a247dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/cache": "^1.0|^2.0",
+                "psr/log": "^1.1",
+                "symfony/cache-contracts": "^1.1.7|^2",
+                "symfony/polyfill-php80": "^1.15",
+                "symfony/service-contracts": "^1.1|^2",
+                "symfony/var-exporter": "^4.4|^5.0"
+            },
+            "conflict": {
+                "doctrine/dbal": "<2.10",
+                "symfony/dependency-injection": "<4.4",
+                "symfony/http-kernel": "<4.4",
+                "symfony/var-dumper": "<4.4"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0|2.0",
+                "psr/simple-cache-implementation": "1.0",
+                "symfony/cache-implementation": "1.0|2.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "dev-master",
+                "doctrine/cache": "^1.6",
+                "doctrine/dbal": "^2.10|^3.0",
+                "predis/predis": "^1.1",
+                "psr/simple-cache": "^1.0",
+                "symfony/config": "^4.4|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/filesystem": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
+                "symfony/messenger": "^4.4|^5.0",
+                "symfony/var-dumper": "^4.4|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Cache\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an extended PSR-6, PSR-16 (and tags) implementation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "caching",
+                "psr6"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/cache/tree/v5.2.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-16T09:10:13+00:00"
+        },
+        {
+            "name": "symfony/cache-contracts",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/cache-contracts.git",
+                "reference": "c0446463729b89dd4fa62e9aeecc80287323615d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/c0446463729b89dd4fa62e9aeecc80287323615d",
+                "reference": "c0446463729b89dd4fa62e9aeecc80287323615d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/cache": "^1.0|^2.0|^3.0"
+            },
+            "suggest": {
+                "symfony/cache-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Cache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to caching",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/cache-contracts/tree/v2.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-23T23:28:01+00:00"
         },
         {
             "name": "symfony/console",
@@ -6084,16 +6558,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.2.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665"
+                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5fa56b4074d1ae755beb55617ddafe6f5d78f665",
-                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5f38c8804a9e97d23e0c8d63341088cd8a22d627",
+                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627",
                 "shasum": ""
             },
             "require": {
@@ -6102,7 +6576,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -6131,7 +6605,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -6147,7 +6621,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-07T11:33:47+00:00"
+            "time": "2021-03-23T23:28:01+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -6305,16 +6779,16 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v2.2.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2"
+                "reference": "69fee1ad2332a7cbab3aca13591953da9cdb7a11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0ba7d54483095a198fa51781bc608d17e84dffa2",
-                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/69fee1ad2332a7cbab3aca13591953da9cdb7a11",
+                "reference": "69fee1ad2332a7cbab3aca13591953da9cdb7a11",
                 "shasum": ""
             },
             "require": {
@@ -6327,7 +6801,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -6364,7 +6838,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v2.2.0"
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -6380,7 +6854,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-07T11:33:47+00:00"
+            "time": "2021-03-23T23:28:01+00:00"
         },
         {
             "name": "symfony/finder",
@@ -6445,16 +6919,16 @@
         },
         {
             "name": "symfony/http-client-contracts",
-            "version": "v2.3.1",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client-contracts.git",
-                "reference": "41db680a15018f9c1d4b23516059633ce280ca33"
+                "reference": "7e82f6084d7cae521a75ef2cb5c9457bbda785f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/41db680a15018f9c1d4b23516059633ce280ca33",
-                "reference": "41db680a15018f9c1d4b23516059633ce280ca33",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/7e82f6084d7cae521a75ef2cb5c9457bbda785f4",
+                "reference": "7e82f6084d7cae521a75ef2cb5c9457bbda785f4",
                 "shasum": ""
             },
             "require": {
@@ -6465,9 +6939,8 @@
             },
             "type": "library",
             "extra": {
-                "branch-version": "2.3",
                 "branch-alias": {
-                    "dev-main": "2.3-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -6504,7 +6977,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client-contracts/tree/v2.3.1"
+                "source": "https://github.com/symfony/http-client-contracts/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -6520,7 +6993,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-14T17:08:19+00:00"
+            "time": "2021-04-11T23:07:08+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -7936,21 +8409,21 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.2.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
+                "reference": "f040a30e04b57fbcc9c6cbcf4dbaa96bd318b9bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
-                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f040a30e04b57fbcc9c6cbcf4dbaa96bd318b9bb",
+                "reference": "f040a30e04b57fbcc9c6cbcf4dbaa96bd318b9bb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "psr/container": "^1.0"
+                "psr/container": "^1.1"
             },
             "suggest": {
                 "symfony/service-implementation": ""
@@ -7958,7 +8431,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -7995,7 +8468,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/master"
+                "source": "https://github.com/symfony/service-contracts/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -8011,7 +8484,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-07T11:33:47+00:00"
+            "time": "2021-04-01T10:43:52+00:00"
         },
         {
             "name": "symfony/string",
@@ -8191,16 +8664,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105"
+                "reference": "95c812666f3e91db75385749fe219c5e494c7f95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/e2eaa60b558f26a4b0354e1bbb25636efaaad105",
-                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/95c812666f3e91db75385749fe219c5e494c7f95",
+                "reference": "95c812666f3e91db75385749fe219c5e494c7f95",
                 "shasum": ""
             },
             "require": {
@@ -8212,7 +8685,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -8249,7 +8722,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v2.3.0"
+                "source": "https://github.com/symfony/translation-contracts/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -8265,7 +8738,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-28T13:05:58+00:00"
+            "time": "2021-03-23T23:28:01+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -8356,6 +8829,135 @@
             "time": "2021-03-28T09:42:18+00:00"
         },
         {
+            "name": "symfony/var-exporter",
+            "version": "v5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-exporter.git",
+                "reference": "5aed4875ab514c8cb9b6ff4772baa25fa4c10307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/5aed4875ab514c8cb9b6ff4772baa25fa4c10307",
+                "reference": "5aed4875ab514c8cb9b6ff4772baa25fa4c10307",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "require-dev": {
+                "symfony/var-dumper": "^4.4.9|^5.0.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\VarExporter\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Allows exporting any serializable PHP data structure to plain PHP code",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "clone",
+                "construct",
+                "export",
+                "hydrate",
+                "instantiate",
+                "serialize"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/var-exporter/tree/v5.2.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-27T10:01:46+00:00"
+        },
+        {
+            "name": "tcdent/php-restclient",
+            "version": "0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tcdent/php-restclient.git",
+                "reference": "4522e8518eaef770d715977fcb45f187f8ad7499"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tcdent/php-restclient/zipball/4522e8518eaef770d715977fcb45f187f8ad7499",
+                "reference": "4522e8518eaef770d715977fcb45f187f8ad7499",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php": ">=5.5.7",
+                "phpunit/phpunit": ">=4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "restclient.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Travis Dent",
+                    "email": "tcdent@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A generic REST API client for PHP",
+            "homepage": "http://github.com/tcdent/php-restclient",
+            "keywords": [
+                "api",
+                "client",
+                "curl",
+                "json",
+                "rest",
+                "xml"
+            ],
+            "support": {
+                "issues": "http://github.com/tcdent/php-restclient/issues",
+                "source": "https://github.com/tcdent/php-restclient/tree/master"
+            },
+            "time": "2017-09-07T20:44:36+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -8410,21 +9012,27 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "dev-omnia/feature/108_phone_nova_field",
+            "version": "2.8.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/addresses.git",
+                "reference": "d1918fbdbf838c5392dc0b90ae7780097227c422"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../tipoff/addresses",
-                "reference": "5374f3279b38af4b032a881718e93e841bf1fc39"
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/d1918fbdbf838c5392dc0b90ae7780097227c422",
+                "reference": "d1918fbdbf838c5392dc0b90ae7780097227c422",
+                "shasum": ""
             },
             "require": {
-                "dniccum/phone-number": "^1.1",
+                "emilianotisato/nova-google-autocomplete-field": "^0.8.0",
                 "php": "^7.4|^8.0",
-                "tipoff/authorization": "^2.8.2",
-                "tipoff/laravel-google-api": "^2.0.0",
-                "tipoff/support": "^2.1.2"
+                "tipoff/authorization": "^2.8.6",
+                "tipoff/laravel-google-api": "^2.1.0",
+                "tipoff/support": "^2.1.5"
             },
             "require-dev": {
-                "tipoff/test-support": "^2.0.0"
+                "tipoff/test-support": "^2.0.1"
             },
             "type": "library",
             "extra": {
@@ -8440,22 +9048,7 @@
                     "Tipoff\\Addresses\\Database\\Factories\\": "database/factories"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tipoff\\Addresses\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "psalm": [
-                    "vendor/bin/psalm"
-                ],
-                "test": [
-                    "vendor/bin/phpunit --colors=always"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8472,22 +9065,30 @@
                 "addresses",
                 "tipoff"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/tipoff/addresses/issues",
+                "source": "https://github.com/tipoff/addresses/tree/2.8.10"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-23T12:32:40+00:00"
         },
         {
             "name": "tipoff/authorization",
-            "version": "2.8.5",
+            "version": "2.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/authorization.git",
-                "reference": "92427d50c37e9f066b5752747c492467cba1ffd5"
+                "reference": "97fbdc3a68421876edf329b8ff504e29cd0a45a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/authorization/zipball/92427d50c37e9f066b5752747c492467cba1ffd5",
-                "reference": "92427d50c37e9f066b5752747c492467cba1ffd5",
+                "url": "https://api.github.com/repos/tipoff/authorization/zipball/97fbdc3a68421876edf329b8ff504e29cd0a45a3",
+                "reference": "97fbdc3a68421876edf329b8ff504e29cd0a45a3",
                 "shasum": ""
             },
             "require": {
@@ -8495,7 +9096,7 @@
                 "laravel/socialite": "^5.2.3",
                 "php": "^7.4|^8.0",
                 "spatie/laravel-permission": "^4.0.1",
-                "tipoff/support": "^2.1.3",
+                "tipoff/support": "^2.1.4",
                 "vyuldashev/nova-permission": "^2.11"
             },
             "require-dev": {
@@ -8534,7 +9135,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/authorization/issues",
-                "source": "https://github.com/tipoff/authorization/tree/2.8.5"
+                "source": "https://github.com/tipoff/authorization/tree/2.8.6"
             },
             "funding": [
                 {
@@ -8542,28 +9143,31 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-16T18:29:27+00:00"
+            "time": "2021-04-20T16:55:13+00:00"
         },
         {
             "name": "tipoff/laravel-google-api",
-            "version": "2.0.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/laravel-google-api.git",
-                "reference": "8ad424f48a4b67d15740c67470ef7dc277375fbd"
+                "reference": "e632ed703662059f00fcff0b2464110747b5a717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/laravel-google-api/zipball/8ad424f48a4b67d15740c67470ef7dc277375fbd",
-                "reference": "8ad424f48a4b67d15740c67470ef7dc277375fbd",
+                "url": "https://api.github.com/repos/tipoff/laravel-google-api/zipball/e632ed703662059f00fcff0b2464110747b5a717",
+                "reference": "e632ed703662059f00fcff0b2464110747b5a717",
                 "shasum": ""
             },
             "require": {
                 "google/apiclient": "^2.7",
                 "php": "^7.4|^8.0",
+                "schulzefelix/laravel-search-console": "^1.7",
                 "skagarwal/google-places-api": "^1.7",
-                "tipoff/authorization": "^2.8.0",
-                "tipoff/support": "^2.0.0"
+                "spatie/data-transfer-object": "^2.8",
+                "spatie/valuestore": "^1.2",
+                "tipoff/authorization": "^2.8.6",
+                "tipoff/support": "^2.1.4"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8573,7 +9177,10 @@
                 "laravel": {
                     "providers": [
                         "Tipoff\\GoogleApi\\GoogleApiServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "GoogleOauth": "Tipoff\\GoogleApi\\Facades\\GoogleOauth"
+                    }
                 }
             },
             "autoload": {
@@ -8606,7 +9213,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/laravel-google-api/issues",
-                "source": "https://github.com/tipoff/laravel-google-api/tree/2.0.0"
+                "source": "https://github.com/tipoff/laravel-google-api/tree/2.1.1"
             },
             "funding": [
                 {
@@ -8614,20 +9221,165 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T16:23:18+00:00"
+            "time": "2021-04-24T16:58:17+00:00"
         },
         {
-            "name": "tipoff/support",
-            "version": "2.1.3",
+            "name": "tipoff/laravel-serpapi",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tipoff/support.git",
-                "reference": "a64b6acbe704835bc20910ff7abcc308257cd1b9"
+                "url": "https://github.com/tipoff/laravel-serpapi.git",
+                "reference": "9dbe770e07c91e6582933785eeff9086d05a3f9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/support/zipball/a64b6acbe704835bc20910ff7abcc308257cd1b9",
-                "reference": "a64b6acbe704835bc20910ff7abcc308257cd1b9",
+                "url": "https://api.github.com/repos/tipoff/laravel-serpapi/zipball/9dbe770e07c91e6582933785eeff9086d05a3f9d",
+                "reference": "9dbe770e07c91e6582933785eeff9086d05a3f9d",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.7",
+                "php": "^7.4|^8.0",
+                "tcdent/php-restclient": "^0.1.7",
+                "tipoff/authorization": "^2.8.0",
+                "tipoff/support": "^2.0.0"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\LaravelSerpapi\\LaravelSerpapiServiceProvider"
+                    ],
+                    "aliases": {
+                        "SerpApiSearch": "Tipoff\\LaravelSerpapi\\Facades\\SerpApiSearchFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\LaravelSerpapi\\": "src",
+                    "Tipoff\\LaravelSerpapi\\Database\\Factories\\": "database/factories",
+                    "Tipoff\\LaravelSerpapi\\Database\\Seeders\\": "database/seeders"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for tracking Google laravel-serpapi",
+            "homepage": "https://github.com/tipoff/laravel-serpapi",
+            "keywords": [
+                "laravel-serpapi",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/laravel-serpapi/issues",
+                "source": "https://github.com/tipoff/laravel-serpapi/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-09T16:33:11+00:00"
+        },
+        {
+            "name": "tipoff/seo",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../../tipoff/seo",
+                "reference": "c98d3ea5c0c9b5c47ead469a350669f28ef7a772"
+            },
+            "require": {
+                "drewroberts/media": "^3.5.0",
+                "php": "^7.4|^8.0",
+                "tipoff/addresses": "^2.8.10",
+                "tipoff/authorization": "^2.8.6",
+                "tipoff/laravel-google-api": "^2.1.1",
+                "tipoff/laravel-serpapi": "^2.0.0",
+                "tipoff/support": "^2.1.5"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\Seo\\SeoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\Seo\\": "src",
+                    "Tipoff\\Seo\\Database\\Factories\\": "database/factories"
+                },
+                "files": [
+                    "src/Helpers/GetFaviconUrl.php",
+                    "src/Helpers/ParseUrl.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tipoff\\Seo\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "psalm": [
+                    "vendor/bin/psalm"
+                ],
+                "test": [
+                    "vendor/bin/phpunit --colors=always"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for tracking SEO keywords",
+            "homepage": "https://github.com/tipoff/seo",
+            "keywords": [
+                "seo",
+                "tipoff"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "tipoff/support",
+            "version": "2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/support.git",
+                "reference": "af697b240f910e77077db8f74b5b6acb4413ba70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/support/zipball/af697b240f910e77077db8f74b5b6acb4413ba70",
+                "reference": "af697b240f910e77077db8f74b5b6acb4413ba70",
                 "shasum": ""
             },
             "require": {
@@ -8688,7 +9440,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/support/issues",
-                "source": "https://github.com/tipoff/support/tree/2.1.3"
+                "source": "https://github.com/tipoff/support/tree/2.1.5"
             },
             "funding": [
                 {
@@ -8696,7 +9448,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-16T14:28:56+00:00"
+            "time": "2021-04-23T05:21:37+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9364,16 +10116,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.4.12",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "d1a91b03885c9c29bc2d88d61a4b10bd1f678156"
+                "reference": "7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/d1a91b03885c9c29bc2d88d61a4b10bd1f678156",
-                "reference": "d1a91b03885c9c29bc2d88d61a4b10bd1f678156",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116",
+                "reference": "7f2d520f8c7d6fc0e5e4949c1363f6ddff0ff116",
                 "shasum": ""
             },
             "require": {
@@ -9420,7 +10172,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-04-13T15:35:40+00:00"
+            "time": "2021-04-20T16:17:55+00:00"
         },
         {
             "name": "myclabs/deep-copy",
