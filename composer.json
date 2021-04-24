@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "drewroberts/blog": "^4.5",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -14,8 +15,7 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/authorization": "^2.7",
-        "tipoff/support": "^2.1",
-        "tipoff/seo": "*"
+        "tipoff/support": "^2.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -58,10 +58,6 @@
         {
             "type": "composer",
             "url": "https://nova.laravel.com"
-        },
-        {
-            "type": "path",
-            "url": "../../tipoff/seo"
         }
     ],
     "config": {

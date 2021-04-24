@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d2a03708bea90230c2eb04d7c8f4063",
+    "content-hash": "a64bc1c8f385871f6ff18cdcf072b139",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1182,6 +1182,78 @@
                 }
             ],
             "time": "2020-11-24T19:55:57+00:00"
+        },
+        {
+            "name": "drewroberts/blog",
+            "version": "4.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewroberts/blog.git",
+                "reference": "3c5d7f6ff3db2e326782b9d47684a3efca25755e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewroberts/blog/zipball/3c5d7f6ff3db2e326782b9d47684a3efca25755e",
+                "reference": "3c5d7f6ff3db2e326782b9d47684a3efca25755e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0",
+                "sixlive/nova-text-copy-field": "^1.5",
+                "tipoff/authorization": "^2.8.6",
+                "tipoff/seo": "^2.7.5",
+                "tipoff/support": "^2.1.5"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DrewRoberts\\Blog\\BlogServiceProvider"
+                    ],
+                    "aliases": {
+                        "LayoutManager": "DrewRoberts\\Blog\\Facade\\LayoutManager"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrewRoberts\\Blog\\": "src",
+                    "DrewRoberts\\Blog\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew Roberts",
+                    "email": "github@drewroberts.com",
+                    "homepage": "https://drewroberts.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel package for opinionated blog implementation",
+            "homepage": "https://github.com/drewroberts/blog",
+            "keywords": [
+                "blog",
+                "laravel",
+                "laravel package"
+            ],
+            "support": {
+                "issues": "https://github.com/drewroberts/blog/issues",
+                "source": "https://github.com/drewroberts/blog/tree/4.5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/drewroberts",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-23T14:34:50+00:00"
         },
         {
             "name": "drewroberts/media",
@@ -5484,6 +5556,61 @@
             "time": "2020-01-20T17:01:48+00:00"
         },
         {
+            "name": "sixlive/nova-text-copy-field",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sixlive/nova-text-copy-field.git",
+                "reference": "1de83cf4aa3599f12308835d6a6baca4fdd53f5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sixlive/nova-text-copy-field/zipball/1de83cf4aa3599f12308835d6a6baca4fdd53f5b",
+                "reference": "1de83cf4aa3599f12308835d6a6baca4fdd53f5b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sixlive\\TextCopy\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sixlive\\TextCopy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "TJ Miller",
+                    "email": "oss@tjmiller.co",
+                    "homepage": "https://www.tjmiller.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Nova text field with click to copy support",
+            "homepage": "https://github.com/sixlive/nova-text-copy-field",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/sixlive/nova-text-copy-field/issues",
+                "source": "https://github.com/sixlive/nova-text-copy-field/tree/master"
+            },
+            "time": "2019-03-03T19:28:38+00:00"
+        },
+        {
             "name": "skagarwal/google-places-api",
             "version": "1.7.2",
             "source": {
@@ -9296,18 +9423,25 @@
         },
         {
             "name": "tipoff/seo",
-            "version": "dev-main",
+            "version": "2.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/seo.git",
+                "reference": "23793d591c26175265388b00e296302848c60b08"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../tipoff/seo",
-                "reference": "c98d3ea5c0c9b5c47ead469a350669f28ef7a772"
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/23793d591c26175265388b00e296302848c60b08",
+                "reference": "23793d591c26175265388b00e296302848c60b08",
+                "shasum": ""
             },
             "require": {
                 "drewroberts/media": "^3.5.0",
                 "php": "^7.4|^8.0",
+                "schulzefelix/laravel-search-console": "^1.7",
                 "tipoff/addresses": "^2.8.10",
                 "tipoff/authorization": "^2.8.6",
-                "tipoff/laravel-google-api": "^2.1.1",
+                "tipoff/laravel-google-api": "^2.1.0",
                 "tipoff/laravel-serpapi": "^2.0.0",
                 "tipoff/support": "^2.1.5"
             },
@@ -9332,22 +9466,7 @@
                     "src/Helpers/ParseUrl.php"
                 ]
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tipoff\\Seo\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "psalm": [
-                    "vendor/bin/psalm"
-                ],
-                "test": [
-                    "vendor/bin/phpunit --colors=always"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -9364,9 +9483,17 @@
                 "seo",
                 "tipoff"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/tipoff/seo/issues",
+                "source": "https://github.com/tipoff/seo/tree/2.7.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-23T14:33:27+00:00"
         },
         {
             "name": "tipoff/support",
