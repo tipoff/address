@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "866132dd5d0dc7507f8c98f3410cb454",
+    "content-hash": "9b0a7ddc906f7972cea435924402b672",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1183,22 +1183,22 @@
         },
         {
             "name": "drewroberts/blog",
-            "version": "4.4.4",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drewroberts/blog.git",
-                "reference": "b5f011687dec01ead6094d5384e066a6cfb4255f"
+                "reference": "50d576aee82f2a55424d7fddeb36e64dafbc9f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drewroberts/blog/zipball/b5f011687dec01ead6094d5384e066a6cfb4255f",
-                "reference": "b5f011687dec01ead6094d5384e066a6cfb4255f",
+                "url": "https://api.github.com/repos/drewroberts/blog/zipball/50d576aee82f2a55424d7fddeb36e64dafbc9f7a",
+                "reference": "50d576aee82f2a55424d7fddeb36e64dafbc9f7a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.3|^8.0",
                 "tipoff/authorization": "^2.8.0",
-                "tipoff/seo": "^2.7.0",
+                "tipoff/seo": "^2.7.1",
                 "tipoff/support": "^2.0.2"
             },
             "require-dev": {
@@ -1242,7 +1242,7 @@
             ],
             "support": {
                 "issues": "https://github.com/drewroberts/blog/issues",
-                "source": "https://github.com/drewroberts/blog/tree/4.4.4"
+                "source": "https://github.com/drewroberts/blog/tree/4.5.1"
             },
             "funding": [
                 {
@@ -1250,7 +1250,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-13T02:34:35+00:00"
+            "time": "2021-04-15T14:51:07+00:00"
         },
         {
             "name": "drewroberts/media",
@@ -2103,16 +2103,16 @@
         },
         {
             "name": "laravel/cashier",
-            "version": "12.x-dev",
+            "version": "v12.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/cashier-stripe.git",
-                "reference": "610aa3632b35377dbd49a3d243c8b3ab2b0be1e4"
+                "reference": "c3fada2f4c0fc0ede136cfc9f6d01707d1197a5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/610aa3632b35377dbd49a3d243c8b3ab2b0be1e4",
-                "reference": "610aa3632b35377dbd49a3d243c8b3ab2b0be1e4",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/c3fada2f4c0fc0ede136cfc9f6d01707d1197a5b",
+                "reference": "c3fada2f4c0fc0ede136cfc9f6d01707d1197a5b",
                 "shasum": ""
             },
             "require": {
@@ -2141,7 +2141,6 @@
             "suggest": {
                 "ext-intl": "Allows for more locales besides the default \"en\" when formatting money values."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2178,20 +2177,20 @@
                 "issues": "https://github.com/laravel/cashier/issues",
                 "source": "https://github.com/laravel/cashier"
             },
-            "time": "2021-04-12T12:18:30+00:00"
+            "time": "2021-04-13T15:01:43+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v8.36.2",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0debd8ad6b5aa1f61ccc73910adf049af4ca0444"
+                "reference": "cf4082973abc796ec285190f0603380021f6d26f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0debd8ad6b5aa1f61ccc73910adf049af4ca0444",
-                "reference": "0debd8ad6b5aa1f61ccc73910adf049af4ca0444",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cf4082973abc796ec285190f0603380021f6d26f",
+                "reference": "cf4082973abc796ec285190f0603380021f6d26f",
                 "shasum": ""
             },
             "require": {
@@ -2346,21 +2345,21 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-04-07T12:37:22+00:00"
+            "time": "2021-04-13T13:49:49+00:00"
         },
         {
             "name": "laravel/nova",
-            "version": "3.23.1",
+            "version": "3.23.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:laravel/nova.git",
-                "reference": "09eb76a742ba42a0cd0a165886f90f7f19160d17"
+                "reference": "3520781b6a64dab93f68b9412383bf622b6d09b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-09eb76a742ba42a0cd0a165886f90f7f19160d17-zip-61b826.zip",
-                "reference": "09eb76a742ba42a0cd0a165886f90f7f19160d17",
-                "shasum": "4ffe4bd0e76c12c04935a764b48982aff13b4af2"
+                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-3520781b6a64dab93f68b9412383bf622b6d09b9-zip-4de43f.zip",
+                "reference": "3520781b6a64dab93f68b9412383bf622b6d09b9",
+                "shasum": "9b62802f2b1e334fb548a9dc5b80fb14034027a6"
             },
             "require": {
                 "brick/money": "^0.5.0",
@@ -2439,9 +2438,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/laravel/nova/tree/v3.23.1"
+                "source": "https://github.com/laravel/nova/tree/v3.23.2"
             },
-            "time": "2021-04-07T22:08:41+00:00"
+            "time": "2021-04-14T08:09:25+00:00"
         },
         {
             "name": "laravel/passport",
@@ -3388,16 +3387,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "2495387841a3eb03ac62b2c984ccd2574303285b"
+                "reference": "69575f50bb7f8a49a41f9bd6bd16c73a6ef4fda3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/2495387841a3eb03ac62b2c984ccd2574303285b",
-                "reference": "2495387841a3eb03ac62b2c984ccd2574303285b",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/69575f50bb7f8a49a41f9bd6bd16c73a6ef4fda3",
+                "reference": "69575f50bb7f8a49a41f9bd6bd16c73a6ef4fda3",
                 "shasum": ""
             },
             "require": {
@@ -3448,7 +3447,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.4.2"
+                "source": "https://github.com/livewire/livewire/tree/v2.4.3"
             },
             "funding": [
                 {
@@ -3456,7 +3455,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-04T15:46:50+00:00"
+            "time": "2021-04-16T14:27:45+00:00"
         },
         {
             "name": "marc-mabe/php-enum",
@@ -5851,23 +5850,24 @@
         },
         {
             "name": "spatie/once",
-            "version": "2.2.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/once.git",
-                "reference": "e6c13ae474a7d4b30975ef6a502a593874ac12d2"
+                "reference": "edf25d4f87e3a91666298ebe78ee2e89f9761bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/once/zipball/e6c13ae474a7d4b30975ef6a502a593874ac12d2",
-                "reference": "e6c13ae474a7d4b30975ef6a502a593874ac12d2",
+                "url": "https://api.github.com/repos/spatie/once/zipball/edf25d4f87e3a91666298ebe78ee2e89f9761bf7",
+                "reference": "edf25d4f87e3a91666298ebe78ee2e89f9761bf7",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.0"
+                "phpunit/phpunit": "^9.3",
+                "symfony/var-dumper": "^5.1"
             },
             "type": "library",
             "autoload": {
@@ -5901,7 +5901,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/once/issues",
-                "source": "https://github.com/spatie/once/tree/2.2.1"
+                "source": "https://github.com/spatie/once/tree/3.0.0"
             },
             "funding": [
                 {
@@ -5909,7 +5909,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-29T18:22:10+00:00"
+            "time": "2020-11-03T13:23:06+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -8593,24 +8593,24 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "2.8.5",
+            "version": "2.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/addresses.git",
-                "reference": "e132418c3aa5187e620a3567702cbd4c7cca9520"
+                "reference": "14dd7569b134922c6ec5e7782fe8e22c865dab15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/addresses/zipball/e132418c3aa5187e620a3567702cbd4c7cca9520",
-                "reference": "e132418c3aa5187e620a3567702cbd4c7cca9520",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/14dd7569b134922c6ec5e7782fe8e22c865dab15",
+                "reference": "14dd7569b134922c6ec5e7782fe8e22c865dab15",
                 "shasum": ""
             },
             "require": {
                 "livewire/livewire": "^2.4.2",
                 "php": "^7.4|^8.0",
-                "tipoff/authorization": "^2.8.0",
+                "tipoff/authorization": "^2.8.2",
                 "tipoff/laravel-google-api": "^2.0.0",
-                "tipoff/support": "^2.0.2"
+                "tipoff/support": "^2.1.0"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8648,7 +8648,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/addresses/issues",
-                "source": "https://github.com/tipoff/addresses/tree/2.8.5"
+                "source": "https://github.com/tipoff/addresses/tree/2.8.7"
             },
             "funding": [
                 {
@@ -8656,20 +8656,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-13T02:23:53+00:00"
+            "time": "2021-04-15T20:17:25+00:00"
         },
         {
             "name": "tipoff/authorization",
-            "version": "2.8.0",
+            "version": "2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/authorization.git",
-                "reference": "8d37962c952e88cd36017208d06229e54884690f"
+                "reference": "7a59705eba01104537dee951a65bcb209c48efbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/authorization/zipball/8d37962c952e88cd36017208d06229e54884690f",
-                "reference": "8d37962c952e88cd36017208d06229e54884690f",
+                "url": "https://api.github.com/repos/tipoff/authorization/zipball/7a59705eba01104537dee951a65bcb209c48efbc",
+                "reference": "7a59705eba01104537dee951a65bcb209c48efbc",
                 "shasum": ""
             },
             "require": {
@@ -8677,7 +8677,7 @@
                 "laravel/socialite": "^5.2.3",
                 "php": "^7.4|^8.0",
                 "spatie/laravel-permission": "^4.0.1",
-                "tipoff/support": "^2.0.0",
+                "tipoff/support": "^2.1.3",
                 "vyuldashev/nova-permission": "^2.11"
             },
             "require-dev": {
@@ -8716,7 +8716,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/authorization/issues",
-                "source": "https://github.com/tipoff/authorization/tree/2.8.0"
+                "source": "https://github.com/tipoff/authorization/tree/2.8.4"
             },
             "funding": [
                 {
@@ -8724,7 +8724,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T16:15:58+00:00"
+            "time": "2021-04-16T14:38:29+00:00"
         },
         {
             "name": "tipoff/laravel-google-api",
@@ -8871,22 +8871,22 @@
         },
         {
             "name": "tipoff/locations",
-            "version": "2.9.9",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/locations.git",
-                "reference": "40252f81eed8b720e1dd9bdcae2c7766418b649f"
+                "reference": "b25ce4f4e306f94835913c0a0e5b38a9946be347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/locations/zipball/40252f81eed8b720e1dd9bdcae2c7766418b649f",
-                "reference": "40252f81eed8b720e1dd9bdcae2c7766418b649f",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/b25ce4f4e306f94835913c0a0e5b38a9946be347",
+                "reference": "b25ce4f4e306f94835913c0a0e5b38a9946be347",
                 "shasum": ""
             },
             "require": {
-                "drewroberts/blog": "^4.4.4",
+                "drewroberts/blog": "^4.5.1",
                 "php": "^7.4|^8.0",
-                "tipoff/authorization": "^2.8.0",
+                "tipoff/authorization": "^2.8.1",
                 "tipoff/support": "^2.0.2"
             },
             "require-dev": {
@@ -8926,7 +8926,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/locations/issues",
-                "source": "https://github.com/tipoff/locations/tree/2.9.9"
+                "source": "https://github.com/tipoff/locations/tree/2.10.1"
             },
             "funding": [
                 {
@@ -8934,30 +8934,30 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-13T02:36:27+00:00"
+            "time": "2021-04-15T15:05:19+00:00"
         },
         {
             "name": "tipoff/seo",
-            "version": "2.7.0",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/seo.git",
-                "reference": "65b67b62d7bf0c19a540ebc257d354535b7e590a"
+                "reference": "3bff2f3fe139f08671b807422c5569581a165ae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/seo/zipball/65b67b62d7bf0c19a540ebc257d354535b7e590a",
-                "reference": "65b67b62d7bf0c19a540ebc257d354535b7e590a",
+                "url": "https://api.github.com/repos/tipoff/seo/zipball/3bff2f3fe139f08671b807422c5569581a165ae9",
+                "reference": "3bff2f3fe139f08671b807422c5569581a165ae9",
                 "shasum": ""
             },
             "require": {
                 "drewroberts/media": "^3.5.0",
                 "php": "^7.3|^8.0",
-                "tipoff/addresses": "^2.8.5",
-                "tipoff/authorization": "^2.8.0",
+                "tipoff/addresses": "^2.8.7",
+                "tipoff/authorization": "^2.8.2",
                 "tipoff/laravel-google-api": "^2.0.0",
                 "tipoff/laravel-serpapi": "^2.0.0",
-                "tipoff/support": "^2.0.2"
+                "tipoff/support": "^2.1.0"
             },
             "require-dev": {
                 "tipoff/test-support": "^2.0.0"
@@ -8999,7 +8999,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/seo/issues",
-                "source": "https://github.com/tipoff/seo/tree/2.7.0"
+                "source": "https://github.com/tipoff/seo/tree/2.7.2"
             },
             "funding": [
                 {
@@ -9007,20 +9007,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-13T02:33:04+00:00"
+            "time": "2021-04-15T20:24:58+00:00"
         },
         {
             "name": "tipoff/support",
-            "version": "2.0.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/support.git",
-                "reference": "17fa7bf0e677a3073475ad268128c3a6cb665349"
+                "reference": "a64b6acbe704835bc20910ff7abcc308257cd1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/support/zipball/17fa7bf0e677a3073475ad268128c3a6cb665349",
-                "reference": "17fa7bf0e677a3073475ad268128c3a6cb665349",
+                "url": "https://api.github.com/repos/tipoff/support/zipball/a64b6acbe704835bc20910ff7abcc308257cd1b9",
+                "reference": "a64b6acbe704835bc20910ff7abcc308257cd1b9",
                 "shasum": ""
             },
             "require": {
@@ -9032,6 +9032,7 @@
                 "illuminate/database": "^8.18",
                 "laravel/cashier": "^12.11.10",
                 "laravel/nova": "^3.22",
+                "livewire/livewire": "^2.4.2",
                 "marc-mabe/php-enum": "^4.4",
                 "nesbot/carbon": "^2.44",
                 "php": "^7.4|^8.0",
@@ -9080,7 +9081,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/support/issues",
-                "source": "https://github.com/tipoff/support/tree/2.0.2"
+                "source": "https://github.com/tipoff/support/tree/2.1.3"
             },
             "funding": [
                 {
@@ -9088,7 +9089,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-12T14:08:11+00:00"
+            "time": "2021-04-16T14:28:56+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9756,16 +9757,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.4.11",
+            "version": "v1.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "e46a3228da4e95a411a981ac807bd119ab2485fa"
+                "reference": "d1a91b03885c9c29bc2d88d61a4b10bd1f678156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/e46a3228da4e95a411a981ac807bd119ab2485fa",
-                "reference": "e46a3228da4e95a411a981ac807bd119ab2485fa",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/d1a91b03885c9c29bc2d88d61a4b10bd1f678156",
+                "reference": "d1a91b03885c9c29bc2d88d61a4b10bd1f678156",
                 "shasum": ""
             },
             "require": {
@@ -9812,7 +9813,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-04-06T14:00:39+00:00"
+            "time": "2021-04-13T15:35:40+00:00"
         },
         {
             "name": "myclabs/deep-copy",
