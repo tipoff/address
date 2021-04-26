@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Tipoff\GoogleApi\Drivers\JsonDriver;
+use Tipoff\GoogleApi\Drivers\KeyEloquentDriver;
+use Tipoff\GoogleApi\Facades\GoogleOauth;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        GoogleOauth::useDriver(JsonDriver::class);
     }
 }
