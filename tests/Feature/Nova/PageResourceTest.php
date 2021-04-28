@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Nova;
 
+use DrewRoberts\Blog\Models\Page;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Tipoff\Authorization\Models\User;
-use DrewRoberts\Blog\Models\Page;
 
 class PageResourceTest extends TestCase
 {
@@ -16,12 +15,10 @@ class PageResourceTest extends TestCase
 
     private const NOVA_ROUTE = '/admin/dashboards/';
 
-
     public function getAdmin()
     {
         return User::role('Admin')->first() ?: User::factory()->create()->assignRole('Admin');
     }
-
 
     public function getPage()
     {
@@ -49,7 +46,6 @@ class PageResourceTest extends TestCase
         $this->actingAs($this->getAdmin());
         $page = $this->getPage();
         $this->get(self::NOVA_ROUTE.'pages/{$page->id}/update-fields')->assertStatus(200);
-
     }
 
     /** @test */
@@ -59,5 +55,4 @@ class PageResourceTest extends TestCase
         $page = $this->getPage();
         $this->get(self::NOVA_ROUTE.'pages/new')->assertStatus(200);
     }
-
 }
