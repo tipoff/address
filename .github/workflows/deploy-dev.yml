@@ -4,11 +4,9 @@ on:
   push:
     branches:
     - dev
-    - pdbreen/feature/deploy
   pull_request:
     branches:
     - dev
-    - pdbreen/feature/deploy
 
 jobs:
   tests:
