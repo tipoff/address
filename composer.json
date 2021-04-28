@@ -13,7 +13,8 @@
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
         "tipoff/authorization": "^2.8.4",
-        "tipoff/locations": "^2.10.1"
+        "tipoff/locations": "^2.10.1",
+        "vimeo/psalm": "^4.7.0"
     },
     "require-dev": {
         "facade/ignition": "^2.8.2",

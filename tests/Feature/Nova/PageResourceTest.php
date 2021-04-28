@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature\Nova;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -10,6 +12,7 @@ use DrewRoberts\Blog\Models\Page;
 
 class PageResourceTest extends TestCase
 {
+    use RefreshDatabase;
 
     private const NOVA_ROUTE = '/admin/dashboards/';
 
