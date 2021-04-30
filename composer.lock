@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a64bc1c8f385871f6ff18cdcf072b139",
+    "content-hash": "3c454403fe1d5066786a07dc332c75dd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9545,6 +9545,74 @@
                 }
             ],
             "time": "2021-04-09T16:33:11+00:00"
+        },
+        {
+            "name": "tipoff/locations",
+            "version": "2.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/locations.git",
+                "reference": "faa8a3e67c6249629a34accc2b4035424c09bb39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/faa8a3e67c6249629a34accc2b4035424c09bb39",
+                "reference": "faa8a3e67c6249629a34accc2b4035424c09bb39",
+                "shasum": ""
+            },
+            "require": {
+                "drewroberts/blog": "^4.5.4",
+                "php": "^7.4|^8.0",
+                "sixlive/nova-text-copy-field": "^1.5",
+                "tipoff/authorization": "^2.8.6",
+                "tipoff/support": "^2.1.5"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\Locations\\LocationsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\Locations\\": "src",
+                    "Tipoff\\Locations\\Database\\Factories\\": "database/factories",
+                    "Tipoff\\Locations\\Database\\Seeders\\": "database/seeders"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for locations in markets",
+            "homepage": "https://github.com/tipoff/locations",
+            "keywords": [
+                "locations",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/locations/issues",
+                "source": "https://github.com/tipoff/locations/tree/2.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-23T14:41:51+00:00"
         },
         {
             "name": "tipoff/seo",
