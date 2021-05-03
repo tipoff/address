@@ -9214,16 +9214,16 @@
         },
         {
             "name": "tipoff/addresses",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/addresses.git",
-                "reference": "0973cbf5f572a269f41d12d038a463d79280f38a"
+                "reference": "96616d878276aedbfcfcb61360654214b1c5f9a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/addresses/zipball/0973cbf5f572a269f41d12d038a463d79280f38a",
-                "reference": "0973cbf5f572a269f41d12d038a463d79280f38a",
+                "url": "https://api.github.com/repos/tipoff/addresses/zipball/96616d878276aedbfcfcb61360654214b1c5f9a7",
+                "reference": "96616d878276aedbfcfcb61360654214b1c5f9a7",
                 "shasum": ""
             },
             "require": {
@@ -9269,7 +9269,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/addresses/issues",
-                "source": "https://github.com/tipoff/addresses/tree/2.9.0"
+                "source": "https://github.com/tipoff/addresses/tree/2.9.1"
             },
             "funding": [
                 {
@@ -9277,7 +9277,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-30T07:33:52+00:00"
+            "time": "2021-05-03T14:45:04+00:00"
         },
         {
             "name": "tipoff/authorization",
