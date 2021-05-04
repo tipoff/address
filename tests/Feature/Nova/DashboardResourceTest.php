@@ -1,14 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Feature\Nova;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Tipoff\Authorization\Models\User;
 
 class DashboardResourceTest extends TestCase
 {
+    use RefreshDatabase;
+
     public function getUserByRole($role)
     {
         return User::role($role)->first() ?: User::factory()->create()->assignRole($role);
