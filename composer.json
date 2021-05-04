@@ -15,11 +15,11 @@
         "tipoff/addresses": "^2.9.1",
         "tipoff/authorization": "^2.8.6",
         "tipoff/support": "^2.1.5",
-	"tipoff/seo": "^2.7.6",
-	"tipoff/notes": "^2.1.0",
-	"tipoff/forms": "^2.1.0",
-	"drewroberts/blog": "^4.5.4",
-	"tipoff/locations": "^2.12.0"
+	    "tipoff/seo": "^2.7.6",
+	    "tipoff/notes": "^2.1.0",
+	    "tipoff/forms": "^2.1.0",
+	    "drewroberts/blog": "^4.5.4",
+	    "tipoff/locations": "^2.12.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
