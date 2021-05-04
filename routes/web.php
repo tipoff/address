@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Tipoff\Addresses\Http\Livewire\DomesticAddressSearchBar;
+use App\Http\Controllers\ExampleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', DomesticAddressSearchBar::class);
+Route::get('/test', function () {
+    return view('test');
+});
+Route::post('/test', [ExampleController::class, 'store'])->name('demo-submit');
 
 Route::get('/testjs', function () {
-    return view('test');   
+    return view('testjs');   
+});
+
+Route::get('/testphone', function () {
+    return view('testphone');
 });
