@@ -51,7 +51,11 @@ Route::get('test-google-oauth', function () {
 Route::get('oauth/gmail/callback', [GoogleOauthController::class, 'handleCallback']);
 
 Route::get('google-oauth/get', function () {
-    dd(GoogleOauth::setIdentifier('google-console')->accessToken());
+    dd(GoogleOauth::accessToken('google-console'));
+});
+
+Route::get('test-login', function() {
+    \Illuminate\Support\Facades\Auth::loginUsingId(1);
 });
 
 Route::get('search-console', function () {
