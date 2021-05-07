@@ -13,8 +13,10 @@
         "laravel/nova": "^3.22",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
-        "tipoff/addresses": "*",
-        "tipoff/authorization": "^2.7"
+        "tipoff/authorization": "^2.7",
+        "tipoff/scheduling": "dev-main",
+        "tipoff/bookings": "dev-main as 2.5.4",
+        "tipoff/locations": "dev-main as 2.12"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -60,7 +62,15 @@
         },
         {
             "type": "path",
-            "url": "../../tipoff/addresses"
+            "url": "../tger-packages/scheduling"
+        },
+        {
+            "type": "path",
+            "url": "../tger-packages/bookings"
+        },
+        {
+            "type": "path",
+            "url": "../tger-packages/locations"
         }
     ],
     "config": {

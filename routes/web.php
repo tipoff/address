@@ -16,6 +16,7 @@ use App\Http\Controllers\ExampleController;
 */
 
 Route::get('/', function () {
+    dd(nova('booking_slot'));
     return view('welcome');
 });
 
@@ -25,6 +26,6 @@ Route::get('/test', function () {
 Route::post('/test', [ExampleController::class, 'store'])->name('submit-form');
 
 Route::get('/testjs', function () {
-    return view('testjs');   
+    return view('testjs');
 });
 
