@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a84ac78-2672-4301-a4f7-c4f66633bebb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +214,9 @@
       <path value="$PROJECT_DIR$/vendor/giggsey/libphonenumber-for-php" />
       <path value="$PROJECT_DIR$/vendor/giggsey/locale" />
       <path value="$PROJECT_DIR$/vendor/laraning/nova-time-field" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/payments" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/checkout" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/invoices" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rlgqqIklBgWhjvurz3p9e1dww5" />
@@ -263,6 +264,7 @@
       <workItem from="1620251806597" duration="1120000" />
       <workItem from="1620285185508" duration="213000" />
       <workItem from="1620341576675" duration="4912000" />
+      <workItem from="1620863290334" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1620162078738</created>

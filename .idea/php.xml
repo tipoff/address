@@ -190,6 +190,9 @@
       <path value="$PROJECT_DIR$/vendor/giggsey/libphonenumber-for-php" />
       <path value="$PROJECT_DIR$/vendor/giggsey/locale" />
       <path value="$PROJECT_DIR$/vendor/laraning/nova-time-field" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/payments" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/checkout" />
+      <path value="$PROJECT_DIR$/vendor/tipoff/invoices" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
