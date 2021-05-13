@@ -16,7 +16,6 @@ use App\Http\Controllers\ExampleController;
 */
 
 Route::get('/', function () {
-    dd(nova('booking_slot'));
     return view('welcome');
 });
 
