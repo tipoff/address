@@ -9461,22 +9461,22 @@
         },
         {
             "name": "tipoff/escape-room",
-            "version": "2.3.4",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/escape-room.git",
-                "reference": "663f8cac966f73fda3ae4be807aa703416d9319b"
+                "reference": "b7a2e4e0510b53dde4279c64e95d21ee7f907704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/escape-room/zipball/663f8cac966f73fda3ae4be807aa703416d9319b",
-                "reference": "663f8cac966f73fda3ae4be807aa703416d9319b",
+                "url": "https://api.github.com/repos/tipoff/escape-room/zipball/b7a2e4e0510b53dde4279c64e95d21ee7f907704",
+                "reference": "b7a2e4e0510b53dde4279c64e95d21ee7f907704",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
                 "tipoff/authorization": "^2.8.6",
-                "tipoff/locations": "^2.11.0",
+                "tipoff/locations": "^2.12.0",
                 "tipoff/support": "^2.1.5"
             },
             "require-dev": {
@@ -9515,7 +9515,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/escape-room/issues",
-                "source": "https://github.com/tipoff/escape-room/tree/2.3.4"
+                "source": "https://github.com/tipoff/escape-room/tree/2.4.0"
             },
             "funding": [
                 {
@@ -9523,7 +9523,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-23T14:09:56+00:00"
+            "time": "2021-05-07T04:21:42+00:00"
         },
         {
             "name": "tipoff/laravel-google-api",
@@ -9676,16 +9676,16 @@
         },
         {
             "name": "tipoff/locations",
-            "version": "2.13",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tipoff/locations.git",
-                "reference": "ac715ae06b0b4a4c7c7af6ea963b06f34449007e"
+                "reference": "d69ef676c02d7d82a4197d66653234c3092afbd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tipoff/locations/zipball/ac715ae06b0b4a4c7c7af6ea963b06f34449007e",
-                "reference": "ac715ae06b0b4a4c7c7af6ea963b06f34449007e",
+                "url": "https://api.github.com/repos/tipoff/locations/zipball/d69ef676c02d7d82a4197d66653234c3092afbd5",
+                "reference": "d69ef676c02d7d82a4197d66653234c3092afbd5",
                 "shasum": ""
             },
             "require": {
@@ -9693,6 +9693,7 @@
                 "php": "^7.4|^8.0",
                 "sixlive/nova-text-copy-field": "^1.5",
                 "tipoff/authorization": "^2.8.6",
+                "tipoff/laravel-google-api": "^2.1.1",
                 "tipoff/support": "^2.1.5"
             },
             "require-dev": {
@@ -9732,7 +9733,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tipoff/locations/issues",
-                "source": "https://github.com/tipoff/locations/tree/2.13"
+                "source": "https://github.com/tipoff/locations/tree/2.14.0"
             },
             "funding": [
                 {
@@ -9740,7 +9741,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-04T05:48:29+00:00"
+            "time": "2021-05-08T00:49:08+00:00"
         },
         {
             "name": "tipoff/scheduling",
