@@ -14,9 +14,8 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/authorization": "^2.7",
-        "tipoff/scheduling": "main",
-        "tipoff/bookings": "main",
-        "tipoff/locations": "main"
+        "tipoff/scheduling": "^3.0.1",
+        "tipoff/locations": "^2.13"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

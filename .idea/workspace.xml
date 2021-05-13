@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a84ac78-2672-4301-a4f7-c4f66633bebb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +266,7 @@
       <workItem from="1620251806597" duration="1120000" />
       <workItem from="1620285185508" duration="213000" />
       <workItem from="1620341576675" duration="4912000" />
-      <workItem from="1620863290334" duration="257000" />
+      <workItem from="1620863290334" duration="1411000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1620162078738</created>
@@ -273,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620162078738</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update composer.json">
+      <created>1620863896957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620863896957</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +302,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value="Update composer.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update composer.json" />
   </component>
 </project>
