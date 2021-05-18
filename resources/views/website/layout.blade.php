@@ -100,7 +100,7 @@
             </script>
         @endisset
     </amp-analytics>
-    <div id="app" class="tger-website">
+    <div id="app" class="tger-website flex flex-col">
         @include('website.partials.header')
         
         <div class="tger-website-wrapper">
