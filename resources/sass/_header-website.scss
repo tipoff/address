@@ -1,0 +1,148 @@
+.tger-website-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+    width: 100%;
+    background-color: $purple;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 100;
+
+    &__navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    &__navbar-left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        @media (max-width: 575px) {
+            flex: 0 0 25%;
+        }
+
+        .tger-logo {
+            padding-bottom: 3px;
+            @media (max-width: 575px) {
+                svg {
+                    width: 106px;
+                    height: 80px;
+                }
+            }
+            @media (min-width: 576px) {
+                svg {
+                    width: 133px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .header-desktop-locations {
+            margin-left: 20px;
+            flex: 1;
+            @media (max-width: 575px) {
+                margin-left: 0px;
+            }
+
+            .button0 {
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                @media (max-width: 575px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 350px) {
+                    display: none;
+                }
+
+                svg.location-pin {
+                    width: 25px;
+                    height: 47.384982638889px;
+                    fill: $muted-purple;
+                    transition: all 0.5s;
+                    margin-right: 10px;
+                    @media (max-width: 575px) {
+                        width: 12px;
+                        height: 22.744791666667px;
+                        margin-right: 5px;
+                    }
+                    @media (max-width: 350px) {
+                        display: none;
+                    }
+                }
+
+                svg.locations-chevron {
+                    width: 25px;
+                    height: 25px;
+                    fill: $white;
+                    transition: all 0.5s;
+                    @media (max-width: 575px) {
+                        width: 12px;
+                        height: 12px;
+                    }
+                    @media (max-width: 350px) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    svg.location-pin {
+                        fill: $purple;
+                        transition: all 0.5s;
+                    }
+
+                    svg.locations-chevron {
+                        fill: $muted-purple;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__navbar-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+
+        .button4 {
+            margin-right: 10px;
+            padding: 5px 15px;
+            text-align: center;
+            @media (min-width: 768px) {
+                margin-right: 30px;
+                padding: 15px 15px 12px;
+            }
+
+            &.mobile-button {
+                display: block;
+                @media (min-width: 768px) {
+                    display: none;
+                }
+            }
+            &.desktop-button {
+                display: none;
+                @media (min-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+
+        svg {
+            fill: $white;
+            transition: all 0.5s;
+
+            &:hover {
+                fill: $muted-purple;
+                transition: all 0.5s;
+            }
+        }
+    }
+}

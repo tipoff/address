@@ -1,0 +1,18 @@
+.tger-website {
+    background-color: $body-bg;
+    font-family: 'Rubik', sans-serif;
+
+    .tger-website-wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+        background-color: $white;
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .behindnav {
+            background-color: #7c2a8b;
+        }
+    }
+}

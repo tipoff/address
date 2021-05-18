@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Tipoff\Addresses\Models\DomesticAddress;
+use Tipoff\Addresses\Actions\SaveDomesticAddressAction;
 use Tipoff\Addresses\Actions\SavePhoneNumberAction;
 
 class ExampleController extends Controller
@@ -36,14 +36,8 @@ class ExampleController extends Controller
      */
     public function store(Request $request)
     {
-        DomesticAddress::createDomesticAddress(
-            $request->input('address-line-1'),
-            $request->input('address-line-2'),
-            $request->input('city'),
-            $request->input('zip')
-        );
-
-        (new SavePhoneNumberAction)->execute($request->phone);
+        (new SavePhoneNumberAction)->execute($request->input('phone'));
+        // (new SaveDomesticAddressAction)->execute($request->all());
 
         dd($request);
     }

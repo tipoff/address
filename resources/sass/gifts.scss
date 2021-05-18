@@ -1,0 +1,143 @@
+.tger-gift-cards {
+    h3 {
+        margin-bottom: 0;
+        @media (max-width: 575px) {
+            font-size: 20px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: 0 auto;
+
+        .card {
+            margin: 10px;
+            width: 250px;
+            position: relative;
+            z-index: 1;
+
+            .card-header {
+                width: 100%;
+                height: 120px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+
+                .card-title {
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                .card-text {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &__checkout {
+        width: 95%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 36px;
+            padding: 0 0 0 60px;
+            margin-bottom: 30px;
+            color: lighten(#000000, 40%);
+            border-left: 5px solid #f7c429;
+            @media (max-width: 575px) {
+                padding: 0;
+                border-left: none;
+            }
+        }
+
+        h5 {
+            margin-bottom: 25px;
+        }
+
+        .form-control {
+            border-radius: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        #card-element {
+            position: relative;
+            z-index: 1;
+            border-radius: 0;
+        }
+
+        .tger-button-container {
+            display: flex;
+            justify-content: space-between;
+
+            a,
+            button {
+                position: relative;
+                z-index: 1;
+
+                &.button5 {
+                    background-color: #fff;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background-color: #84329b;
+                        color: #fff;
+                        text-decoration: none;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.errors {
+    color: red;
+}
+
+.form-buttons {
+    margin-top: 30px;
+}
+
+.StripeElement {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100% !important;
+    padding: 10px 12px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}

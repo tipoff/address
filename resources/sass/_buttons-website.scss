@@ -1,0 +1,272 @@
+.button-link {
+    color: $purple;
+    font-family: $font2;
+    display: block;
+    border: none;
+    background-color: transparent;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $muted-purple;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button0 {
+    color: $white;
+    border-color: transparent;
+    background-color: transparent;
+    padding: 0 10px;
+    font-family: $font1;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $muted-purple;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button1 {
+    color: $white;
+    border: 2px solid $white;
+    background-color: $purple;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $white;
+        background-color: $white;
+        color: $purple;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button2 {
+    color: $white;
+    background-color: $blue;
+    border: 2px solid $blue;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $muted-blue;
+        background-color: $muted-blue;
+        color: $white;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button3 {
+    color: $blue;
+    background-color: transparent;
+    border: 2px solid $blue;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $blue;
+        background-color: $blue;
+        color: $white;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button4 {
+    color: $white;
+    background-color: $mint;
+    border: 2px solid $mint;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $white;
+        background-color: $white;
+        color: $mint;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button5 {
+    color: $purple;
+    background-color: transparent;
+    border: 2px solid $purple;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $purple;
+        color: $white;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button6 {
+    color: $white;
+    background-color: $purple;
+    border: 2px solid $purple;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $white;
+        color: $purple;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button7 {
+    color: $purple;
+    background-color: $white;
+    border: 2px solid $white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $purple;
+        border-color: $purple;
+        color: $white;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button8 {
+    color: $black;
+    border: 2px solid $black;
+    padding: 10px 15px;
+    background-color: transparent;
+    font-family: $font1;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white;
+        background-color: $black;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button9 {
+    color: $pink;
+    border: 2px solid $pink;
+    background-color: transparent;
+    font-family: $font1;
+    padding: 10px 15px;
+    transition: all 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $yellow;
+        background-color: $pink;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
+
+.button10 {
+    color: $white;
+    background-color: $sold-out;
+    border: 2px solid $sold-out;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.5s;
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}

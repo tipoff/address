@@ -2,6 +2,9 @@
 
 @section ('content')
 
-@livewire ('addresses::get-phone')
+<form wire:ignore id="phone-number" onsubmit="savePhoneNumber(event)">
+    @livewire ('addresses::get-phone')
+    <input type="submit" class="btn" value="Submit"/>
+</form>
 
 @endsection

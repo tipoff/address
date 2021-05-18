@@ -1,0 +1,82 @@
+.tger-private-parties {
+    margin: -100px 0;
+    padding: 160px 0 160px;
+    position: relative;
+
+    &__inner {
+        h2 {
+            font-size: 36px;
+            padding: 0 0 0 60px;
+            margin-bottom: 30px;
+            color: $light-dark;
+            border-left: 5px solid $yellow;
+            @media (max-width: 575px) {
+                padding: 0;
+                border-left: none;
+            }
+        }
+    }
+}
+
+.tger-private-parties-form {
+    position: relative;
+    margin-bottom: -100px;
+
+    &__top-bg {
+        border-right: 1300px solid $yellow;
+        border-top: 100px solid transparent;
+        border-bottom: 0px solid transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bottom-bg {
+        border-left: 1300px solid $yellow;
+        border-top: 0px solid transparent;
+        border-bottom: 100px solid transparent;
+    }
+
+    &__wrapper {
+        background-color: $yellow;
+    }
+
+    &__inner {
+        padding: 100px 0;
+
+        fieldset {
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    margin-bottom: 5px;
+
+                    &.form-check-label {
+                        display: flex;
+                        align-items: center;
+
+                        input.form-check-input {
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                }
+
+                input[type='date'],
+                input[type='time'] {
+                    font-family: $font1;
+                }
+
+                .form-control {
+                    border-radius: 0;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .tger-button-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
