@@ -14,7 +14,8 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.4",
         "tipoff/authorization": "^2.7",
-        "tipoff/escape-room": "^2.4"
+        "tipoff/escape-room": "^2.4",
+        "tipoff/reviews": "^2.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

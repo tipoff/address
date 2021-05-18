@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f8cb14f9945ccab494fd0d47c2c89d6",
+    "content-hash": "6dce48f98a90faae0623672cbe287613",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9631,6 +9631,74 @@
                 }
             ],
             "time": "2021-05-08T00:49:08+00:00"
+        },
+        {
+            "name": "tipoff/reviews",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipoff/reviews.git",
+                "reference": "1042f09470b4c8f3b93f35d5311e2c14da02292b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipoff/reviews/zipball/1042f09470b4c8f3b93f35d5311e2c14da02292b",
+                "reference": "1042f09470b4c8f3b93f35d5311e2c14da02292b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0",
+                "tipoff/authorization": "^2.8.1",
+                "tipoff/locations": "^2.10.1",
+                "tipoff/support": "^2.0.2"
+            },
+            "require-dev": {
+                "tipoff/test-support": "^2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tipoff\\Reviews\\ReviewsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tipoff\\Reviews\\": "src",
+                    "Tipoff\\Reviews\\Database\\Factories\\": "database/factories",
+                    "Tipoff\\Reviews\\Database\\Seeders\\": "database/seeders"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tipoff",
+                    "email": "packages@tipoff.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Package for tracking Google reviews",
+            "homepage": "https://github.com/tipoff/reviews",
+            "keywords": [
+                "reviews",
+                "tipoff"
+            ],
+            "support": {
+                "issues": "https://github.com/tipoff/reviews/issues",
+                "source": "https://github.com/tipoff/reviews/tree/2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tipoff",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-15T17:03:57+00:00"
         },
         {
             "name": "tipoff/seo",
