@@ -11,10 +11,10 @@
                         @endif
                         @if(isset($cta))
                         <div class="tger-button-container">
-                            <a href="{{ $market->bookings_path ?? route('bookings') }}" class="button4">
+                            <a href="{{ $market->bookings_path ?? route('bookings') }}" class="px-2 py-1 ring-2">
                                 Book Online
                             </a>
-                            <a href="{{ $market->reservations_path ?? route('reservations') }}" class="button1">
+                            <a href="{{ $market->reservations_path ?? route('reservations') }}" class="px-2 py-1 ring-2">
                                 Play Anytime
                             </a>
                         </div>

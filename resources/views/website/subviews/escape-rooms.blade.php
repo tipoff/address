@@ -2,7 +2,7 @@
     
     <svg 
         version="1.1" 
-        class="escape-room-burst-right" 
+        class="escape-room-burst-right w-8" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" 
         viewBox="0 0 318.89 326.27" 
