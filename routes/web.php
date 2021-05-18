@@ -31,7 +31,7 @@ Route::get('/testphone', function () {
 Route::get('/', function () {
     $current = null;
     $marketreviews = null;
-    $reviews = null;
+    $reviews = app('review')::all();
     $escapeThemes = app('escaperoom_theme')::all();
     $markets = app('market')::all();
 
