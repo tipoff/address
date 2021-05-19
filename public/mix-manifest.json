@@ -1,4 +1,12 @@
 {
+    "/js/waiver.js": "/js/waiver.js",
+    "/js/booking.js": "/js/booking.js",
+    "/js/gifts.js": "/js/gifts.js",
     "/js/app.js": "/js/app.js",
+    "/css/gifts.css": "/css/gifts.css",
+    "/css/booking.css": "/css/booking.css",
+    "/css/waiver.css": "/css/waiver.css",
+    "/css/feedback.css": "/css/feedback.css",
+    "/css/website.css": "/css/website.css",
     "/css/app.css": "/css/app.css"
 }

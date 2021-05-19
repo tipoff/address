@@ -21,6 +21,16 @@
         "tailwindcss": "^2.1.1"
     },
     "dependencies": {
-        "n": "^7.1.0"
+        "bootstrap": "^5.0.1",
+        "css-byebye": "^3.0.0",
+        "moment": "^2.29.1",
+        "n": "^7.1.0",
+        "postcss-clear-empty-strings": "^1.0.0",
+        "postcss-no-important": "^4.1.0",
+        "postcss-sanitize": "0.0.7",
+        "vue": "^2.6.12",
+        "vue-moment": "^4.1.0",
+        "vue-router": "^3.5.1",
+        "vue-signature-pad": "^2.0.2"
     }
 }

@@ -65,7 +65,7 @@
             amp-accordion > section[expanded] > .nav-link{border-bottom: 4px solid #f7c429;}
     @endif
     @section('styles')
-        {{ File::get( public_path('css/app.css') ) }}
+        {{ File::get( public_path('css/website.css') ) }}
     @show
     </style>
 
@@ -100,7 +100,7 @@
             </script>
         @endisset
     </amp-analytics>
-    <div id="app" class="tger-website flex flex-col">
+    <div id="app" class="tger-website">
         @include('website.partials.header')
         
         <div class="tger-website-wrapper">

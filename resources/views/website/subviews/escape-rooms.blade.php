@@ -2,7 +2,7 @@
     
     <svg 
         version="1.1" 
-        class="escape-room-burst-right w-8" 
+        class="escape-room-burst-right" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" 
         viewBox="0 0 318.89 326.27" 
@@ -211,18 +211,18 @@
     </svg>
 
     @if(!$market || $market->findEscapeThemes() !== null)
-    <div class="">  
+    <div class="container mt-5 mb-5">  
         <div class="row">
-            <div class="">
+            <div class="col-md-6">
                 <h3>Escape Rooms</h3>
                 <p>Test your code-breaking, problem-solving, combination-cracking skills! Check out our advanced game play leading the escape room industry:</p>
             </div>
         </div>
 
         @if($market)
-            <div class="grid grid-cols-4 gap-4">
+            <div class="row">
                 @foreach ($market->findEscapeThemes() as $marketescapetheme)
-                    <div class="">
+                    <div class="col-6 col-md-3 mb-5 mb-md-0">
                         <a href="{{ url($marketescapetheme->path) }}">
                             <amp-img src="{{ $marketescapetheme->icon->url }}" height="300" width="300" layout="intrinsic" class="escape-room-icon"></amp-img>
                             <span>{{ $marketescapetheme->title }}<br>
@@ -239,11 +239,11 @@
                 @endforeach
             </div>
         @else
-            <div class="grid grid-cols-4 gap-4">
+            <div class="row">
                 @foreach ($allescapethemes as $escapetheme)
-                    <div class="">
+                    <div class="col-6 col-md-3 mb-5 mb-md-0">
                         <a href="{{ url($escapetheme->path) }}">
-                            <amp-img src="{{ asset('img/placeholder.png') }}" height="300" width="300" layout="intrinsic" class="escape-room-icon"></amp-img>
+                            <amp-img src="{{ $escapetheme->icon->url }}" height="300" width="300" layout="intrinsic" class="escape-room-icon"></amp-img>
                             <span>{{ $escapetheme->title }}<br>
                                 @if ($escapetheme->duration == 120)
                                     <amp-img src="/img/icons/120-minutes.png" width="93" height="30" layout="intrinsic"></amp-img>
