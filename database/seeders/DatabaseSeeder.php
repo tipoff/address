@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Tipoff\Reviews\Models\Review;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,6 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        Review::factory(4)->create();
+        app('review')::factory(4)->create();
+        app('escaperoom_theme')::factory(5)->create();
     }
 }
