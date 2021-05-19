@@ -37,7 +37,8 @@ Route::get('/', function () {
 
     return view('website.index', [
         'market' => $current,
-        'reviews' => $current ? $marketreviews : $reviews,
+        'reviews' => $reviews,
+        // 'reviews' => $current ? $marketreviews : $reviews,
         'html' => null, // set to true if need to use html page instead of AMP
         'title' => 'The Great Escape Room',
         'subtitle' => 'Voted #1 Escape Room across America - A truly innovative experience that will keep you coming back for more!',

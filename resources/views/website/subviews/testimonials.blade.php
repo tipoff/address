@@ -924,11 +924,10 @@
                             <h4 class="testimonial-callout">"{{ $review->title }}"</h4>
                             
                             <p class="testimonial-text">{{ $review->text }}</p>
-        
                             <div class="testimonial-user">
                                 <span class="testimonial-initial">{{ $review->initial }}</span>
                                 <div class="testimonial-user-meta">
-                                    <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                    <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                     <p>{{ $review->date }}</p>
                                 </div>
                             </div>
@@ -1852,7 +1851,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
@@ -2763,7 +2762,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
@@ -3679,7 +3678,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
@@ -4590,7 +4589,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
@@ -5506,7 +5505,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
@@ -6417,7 +6416,7 @@
                                     <div class="testimonial-user">
                                         <span class="testimonial-initial">{{ $review->initial }}</span>
                                         <div class="testimonial-user-meta">
-                                            <p><strong>{{ $review->name }} from {{ $review->location->market->name }}</strong></p>
+                                            <p><strong>{{ $review->google_ref }} from {{ $review->location->market->name }}</strong></p>
                                             <p>{{ $review->date }}</p>
                                         </div>
                                     </div>
