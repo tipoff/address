@@ -1,0 +1,296 @@
+.tger-theme-video {
+    padding: 160px 0 100px;
+    margin: -100px 0;
+    position: relative;
+    z-index: 1;
+
+    &__bg {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        height: 270px;
+        z-index: 2;
+        background-color: $yellow;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            height: 220px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            height: 360px;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            height: 255px;
+        }
+        @media (max-width: 575px) {
+            height: 53%;
+            top: 20px;
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        @media (max-width: 414px) {
+            height: 50%;
+        }
+        @media(max-width: 360px) {
+            height: 45%;
+        }
+    }
+
+    &__text {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__video-container {
+        position: relative;
+        z-index: 3;
+        padding: 0;
+        @media (max-width: 575px) {
+            padding: 0 5px;
+        }
+    }
+
+    &__time {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    &__monitoring {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+
+        .monitoring-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            amp-img.tger-escape-room-monitoring {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .monitoring-text {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @media(max-width: 575px) {
+                text-align: center;
+            }
+
+            h3 {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__notes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+        background-color: $yellow;
+        
+        .notes-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            amp-img.tger-escape-room-notes {
+                display: block;
+                margin: 0 auto;
+                
+                img {
+                    @media(max-width: 575px) {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .notes-text {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media(max-width: 575px) {
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.tger-themes-rooms__top-bg {
+    border-bottom: 100px solid $purple;
+    border-left: 1300px solid transparent;
+    border-right: 0 solid transparent;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.tger-themes-rooms {
+    h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+        color: $white;
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
+    }
+
+    &__bottom-bg {
+        border-top: 100px solid $purple;
+        border-left: 0 solid transparent;
+        border-right: 1300px solid transparent;
+    }
+
+    &__main {
+        padding: 50px 0 0;
+        background-color: $purple;
+    }
+
+    &__inner {
+        margin-bottom: 50px;
+        padding: 0 10px;
+
+        .tger-theme-icon-wrapper {
+            margin-bottom: 5px;
+
+            .tger-escape-rate-icon {
+                position: relative;
+                left: -5px;
+            }
+        }
+
+        h3 {
+            color: $white;
+            font-size: 22px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+    }
+}
+
+.tger-themes-other-rooms {
+    padding: 100px 0 0;
+
+    h2 {
+        font-size: 36px;
+        padding: 0 0 0 60px;
+        margin-bottom: 30px;
+        color: $light-dark;
+        border-left: 5px solid $yellow;
+        @media (max-width: 575px) {
+            padding: 15px;
+            font-size: 25px;
+        }
+    }
+
+    .order-0 {
+        order: 0;
+    }
+    .order-1 {
+        order: 1;
+    }
+    .order-md-0 {
+        @media (min-width: 768px) {
+            order: 0;
+        }
+    }
+    .order-md-1 {
+        @media (min-width: 768px) {
+            order: 1;
+        }
+    }
+    .mb-5 {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        .other-rooms-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            @media (max-width: 767px) {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            h3 {
+                color: $light-dark;
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                color: $black;
+            }
+
+            span {
+                color: $blue;
+                width: 100%;
+                font-weight: 900;
+                transition: all 0.5s;
+            }
+        }
+
+        .other-rooms-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            amp-img {
+                transition: all 0.5s;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            .other-rooms-inner {
+                span {
+                    color: lighten($blue, 10%);
+                    text-decoration: underline;
+                    transition: all 0.5s;
+                }
+            }
+
+            .other-rooms-image {
+                amp-img {
+                    transform: scale(1.025);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}

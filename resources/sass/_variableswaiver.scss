@@ -1,0 +1,54 @@
+// Styling
+$enable-shadows: false;
+
+// Body
+$body-bg: #ffffff;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers');
+
+// Typography
+$font1: 'Life Savers', sans-serif;
+$font2: 'Roboto Condensed', sans-serif;
+$font3: 'Roboto Condensed', sans-serif;
+$font-family-sans-serif: 'Rubik', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$primary: #84329b;
+$dark: #000000;
+$indigo: #6574cd;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+/* Non-Muted */
+$purple: #84329b;
+$yellow: #ffc845;
+$pink: #e24585;
+$blue: #1a60e8;
+$dark-blue: #1b365d;
+$green: #71cc98;
+$mint: #71cc98;
+$red: #BF140C;
+$orange: #e1523e;
+$light-grey: #f8f8f8;
+$white: #fff;
+$light-white: #f8f9fa;
+$black: #000;
+$dark: $black;
+$light-dark: lighten($dark, 40%);
+$gray: #f5f7f9;
+$menu-hover: $light-white;
+$body-bg: $light-grey;
+$sold-out: #BF140C;
+
+/* Muted */
+$muted-purple: #b884c1;
+$muted-yellow: #ffdd92;
+$muted-pink: #f697b2;
+$muted-blue: #757f9b;
+$muted-green: #a9e0c0;
+$muted-orange: #fa9a86;

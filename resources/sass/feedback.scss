@@ -1,0 +1,314 @@
+// Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers');
+
+// Variables
+@import 'variablesfeedback';
+@import 'variables-website';
+@import 'buttons-website';
+@import 'typography-website';
+@import 'globals-website';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.tger-feedback-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+    width: 100%;
+    background-color: $purple;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 100;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 95%;
+        margin: 0 auto;
+
+        .tger-logo {
+            padding-bottom: 3px;
+            @media (max-width: 575px) {
+                svg {
+                    width: 106px;
+                    height: 80px;
+                }
+            }
+            @media (min-width: 576px) {
+                svg {
+                    width: 133px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .tger-location {
+            font-size: 20px;
+            
+            svg.location-pin {
+                width: 25px;
+                height: 47.384982638889px;
+                fill: $muted-purple;
+                transition: all 0.5s;
+                margin-right: 10px;
+                // @media (max-width: 575px) {
+                //     width: 12px;
+                //     height: 22.744791666667px;
+                //     margin-right: 5px;
+                // }
+                // @media (max-width: 350px) {
+                //     display: none;
+                // }
+            }
+
+            &:hover {
+                svg.location-pin {
+                    fill: $purple;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+
+
+.tger-feedback-website-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: $white;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 1000px;
+
+    &__pattern-bg {
+        background-size: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.3;
+    }
+}
+
+
+.tger-feedback-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
+    .card {
+        border: none;
+        background-color: transparent;
+
+        .card-body {
+            h2 {
+                color: $purple;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #games {
+
+        h2 {
+            color: $purple;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            border: none;
+            background-color: transparent;
+    
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+                transition: all 0.5s;
+            }
+            
+            h5 {
+                font-weight: 300;
+                font-family: $font2;
+                text-transform: uppercase;
+                color: $blue;
+                display: block;
+                text-align: center;
+                transition: all 0.5s;
+            }
+        }
+
+        .tger-button-container {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            @media(max-width: 767px) {
+                width: 75%;
+            }
+            @media(max-width: 575px) {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            button {
+                width: 48%;
+                @media(max-width: 575px) {
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+
+                &.button5 {
+                    background-color: $white;
+
+                    &:hover {
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #form {
+
+        h2 {
+            color: $purple;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+
+            label {
+                margin-bottom: 5px;
+
+                &.form-check-label {
+                    display: flex;
+                    align-items: center;
+
+                    input.form-check-input {
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+            }
+
+            input[type='date'],
+            input[type='time'],
+            select, select > option {
+                font-family: $font1;
+            }
+
+            .form-control {
+                border-radius: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .form-control:disabled, .form-control[readonly] {
+                background-color: transparent;
+                opacity: 1;
+                font-family: $font2;
+                font-size: 13px;
+            }
+        }
+
+        .tger-button-container {
+            display: flex;
+            align-items: center;
+            
+            input {
+                width: 50px;
+                margin-right: 10px;
+                padding: 5px;
+
+                &.button5 {
+                    background-color: $white;
+
+                    &:hover {
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+
+        input.form-check-input {
+            position: relative;
+            top: 0px;
+            @media(max-width: 767px) {
+                position: absolute;
+                top: 1px;
+            }
+        }
+    }
+}
+
+
+.tger-feedback-footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: $purple;
+    
+    &__wrapper {
+        padding: 30px 0;
+        background-color: $purple;
+    }
+
+    &__copyright {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__copyright-left {
+        list-style: none inside;
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+
+        li {
+            color: $white;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-right: 20px;
+            @media (max-width: 575px) {
+                margin: 10px 10px 10px 0;
+            }
+
+            a {
+                color: $white;
+                font-size: 12px;
+                text-transform: uppercase;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $muted-purple;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}

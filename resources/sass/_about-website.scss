@@ -1,0 +1,16 @@
+.tger-about {
+    padding: 60px 0;
+
+    h2 {
+        font-size: 36px;
+        padding: 0 0 0 60px;
+        margin-bottom: 60px;
+        color: $light-dark;
+        border-left: 5px solid $yellow;
+        @media (max-width: 575px) {
+            padding: 15px;
+            margin-bottom: 50px;
+            font-size: 25px;
+        }
+    }
+}

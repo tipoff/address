@@ -1,0 +1,38 @@
+.tger-location-selector {
+    position: relative;
+
+    &__top-bg {
+        border-right: 1300px solid $yellow;
+        border-top: 100px solid transparent;
+        border-bottom: 0px solid transparent;
+    }
+
+    &__bottom-bg {
+        border-left: 1300px solid $yellow;
+        border-top: 0px solid transparent;
+        border-bottom: 100px solid transparent;
+    }
+
+    &__wrapper {
+        background-color: $yellow;
+    }
+
+    &__inner {
+        padding: 100px 0;
+
+        h2 {
+            color: $white;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            @media (max-width: 575px) {
+                width: 90%;
+            }
+        }
+    }
+}

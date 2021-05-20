@@ -1,0 +1,23 @@
+.tger-bookings {
+    background-color: $primary;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: $white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $white;
+        text-align: center;
+        font-weight: 300;
+
+        strong {
+            font-weight: 900;
+        }
+    }
+}

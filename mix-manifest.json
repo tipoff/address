@@ -1,0 +1,16 @@
+{
+    "/nova-components/Booking/dist/js/tool.js": "/nova-components/Booking/dist/js/tool.js",
+    "/nova-components/BookingCalendar/dist/js/tool.js": "/nova-components/BookingCalendar/dist/js/tool.js",
+    "/public/js/app.js": "/public/js/app.js",
+    "/public/js/booking.js": "/public/js/booking.js",
+    "/public/js/gifts.js": "/public/js/gifts.js",
+    "/public/js/waiver.js": "/public/js/waiver.js",
+    "/public/css/website.css": "/public/css/website.css",
+    "/public/css/feedback.css": "/public/css/feedback.css",
+    "/public/css/waiver.css": "/public/css/waiver.css",
+    "/public/css/booking.css": "/public/css/booking.css",
+    "/public/css/gifts.css": "/public/css/gifts.css",
+    "/nova-components/Booking/dist/css/tool.css": "/nova-components/Booking/dist/css/tool.css",
+    "/nova-components/BookingCalendar/dist/css/tool.css": "/nova-components/BookingCalendar/dist/css/tool.css",
+    "/public/css/app.css": "/public/css/app.css"
+}

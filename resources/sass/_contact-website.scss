@@ -1,0 +1,40 @@
+.tger-contact {
+    margin: -100px 0;
+    padding: 160px 0 160px;
+    position: relative;
+
+    &__inner {
+        h2 {
+            font-size: 36px;
+            padding: 0 0 0 60px;
+            margin-bottom: 30px;
+            color: $light-dark;
+            border-left: 5px solid $yellow;
+            @media (max-width: 575px) {
+                padding: 0;
+                border-left: none;
+            }
+        }
+
+        p {
+            margin-bottom: 60px;
+        }
+
+        fieldset {
+            .form-group {
+                margin-bottom: 15px;
+
+                .form-control {
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 0;
+                }
+            }
+
+            .tger-button-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

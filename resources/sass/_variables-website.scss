@@ -1,0 +1,348 @@
+// Styling
+$enable-shadows: false;
+
+/* Non-Muted */
+$purple: #84329b;
+$yellow: #ffc845;
+$pink: #e24585;
+$blue: #1a60e8;
+$dark-blue: #1b365d;
+$green: #71cc98;
+$mint: #71cc98;
+$orange: #e1523e;
+$light-grey: #f8f8f8;
+$white: #fff;
+$light-white: #f8f9fa;
+$black: #000;
+$dark: $black;
+$light-dark: lighten($dark, 40%);
+$gray: #f5f7f9;
+$menu-hover: $light-white;
+$body-bg: $light-grey;
+$sold-out: #BF140C;
+
+/* Muted */
+$muted-purple: #b884c1;
+$muted-yellow: #ffdd92;
+$muted-pink: #f697b2;
+$muted-blue: #757f9b;
+$muted-green: #a9e0c0;
+$muted-orange: #fa9a86;
+
+/* SVG Classes */
+.cls-1 {
+    fill: #b884c1;
+}
+.cls-2 {
+    fill: #fff;
+}
+.tger-menu-logo4 {
+    fill: #7c3894;
+}
+
+.svg-no-fill {
+    fill: none;
+}
+
+.svg-location-pin {
+    fill: #b086be;
+}
+
+.svg-muted-yellow {
+    fill: $muted-yellow;
+}
+
+.svg-escape-room-color1 {
+    fill: #fede9c;
+}
+.svg-escape-room-color2 {
+    fill: #7c3894;
+}
+.svg-escape-room-color3 {
+    fill: #83c89c;
+}
+
+.svg-scavenger-hunt-rooms3 {
+    fill: #d45382;
+}
+.svg-scavenger-hunt-rooms11 {
+    fill: #ffffff;
+}
+.svg-scavenger-hunt-rooms7 {
+    fill: #83c89c;
+}
+.svg-scavenger-hunt-rooms2 {
+    fill: #7c3894;
+}
+.svg-scavenger-hunt-rooms6 {
+    fill: #f7ca5e;
+}
+.svg-scavenger-hunt-rooms24 {
+    fill: none;
+}
+
+.svg-portable-escape-experience0 {
+    fill: #b884c1;
+}
+.svg-portable-escape-experience1 {
+    fill: #fa9a86;
+}
+.svg-portable-escape-experience3 {
+    fill: #e64783;
+}
+.svg-portable-escape-experience6 {
+    fill: #ffc844;
+}
+.svg-portable-escape-experience11 {
+    fill: #ffffff;
+}
+
+.svg-corporate-events11 {
+    fill: #ffffff;
+}
+.svg-corporate-events29 {
+    fill: #7c3894;
+}
+.svg-corporate-events32 {
+    fill: #f7ca5e;
+}
+.svg-corporate-events33 {
+    fill: none;
+}
+.svg-corporate-events36 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #d65a47;
+}
+.svg-corporate-events39 {
+    fill: #d65a47;
+}
+
+.svg-team-building3 {
+    fill: #d45382;
+}
+.svg-team-building6 {
+    fill: #f7ca5e;
+}
+.svg-team-building24 {
+    fill: none;
+}
+.svg-team-building27 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #83c89c;
+}
+
+.svg-private-parties6 {
+    fill: #f7ca5e;
+}
+.svg-private-parties10 {
+    fill: #d65a47;
+}
+.svg-private-parties24 {
+    fill: none;
+}
+.svg-private-parties28 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #d45382;
+}
+
+.svg-customer-service0 {
+    fill: #ffc844;
+}
+.svg-customer-service1 {
+    clip-path: url(#SVGID_2_);
+}
+.svg-customer-service2 {
+    fill: #ffdd92;
+}
+.svg-customer-service5 {
+    fill: #e64783;
+}
+.svg-customer-service6 {
+    fill: #b884c1;
+}
+.svg-customer-service8 {
+    fill: #f697b2;
+}
+.svg-customer-service13 {
+    fill: #863399;
+}
+.svg-customer-service50 {
+    fill: #f79a87;
+}
+
+.svg-on-the-run0 {
+    fill: #7f3f98;
+}
+.svg-on-the-run1 {
+    fill: #ffdd92;
+}
+.svg-on-the-run2 {
+    fill: #757f9b;
+}
+.svg-on-the-run3 {
+    fill: #e64783;
+}
+.svg-on-the-run4 {
+    fill: #b884c1;
+}
+.svg-on-the-run5 {
+    fill: #6cca98;
+}
+.svg-on-the-run6 {
+    fill: #f697b2;
+}
+.svg-on-the-run7 {
+    fill: none;
+}
+.svg-on-the-run8 {
+    fill: #fa9a86;
+}
+.svg-on-the-run9 {
+    fill: #ffffff;
+}
+.svg-on-the-run10 {
+    fill: #a9e0c0;
+}
+.svg-on-the-run11 {
+    fill: #863399;
+}
+.svg-on-the-run12 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+}
+.svg-on-the-run13 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+}
+.svg-on-the-run14 {
+    fill: #ffc844;
+}
+.svg-on-the-run15 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #ffc844;
+}
+.svg-on-the-run16 {
+    clip-path: url(#SVGID_2_);
+}
+.svg-on-the-run17 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #e64783;
+}
+.svg-on-the-run18 {
+    clip-path: url(#SVGID_4_);
+}
+.svg-on-the-run19 {
+    clip-path: url(#SVGID_6_);
+}
+.svg-on-the-run20 {
+    fill: #e74f3d;
+}
+.svg-on-the-run21 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #e74f3d;
+}
+.svg-on-the-run22 {
+    clip-path: url(#SVGID_8_);
+}
+.svg-on-the-run23 {
+    fill: #1c355e;
+}
+.svg-on-the-run24 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #1c355e;
+}
+.svg-on-the-run25 {
+    clip-path: url(#SVGID_10_);
+}
+.svg-on-the-run26 {
+    opacity: 0.47;
+}
+.svg-on-the-run27 {
+    clip-path: url(#SVGID_12_);
+}
+.svg-on-the-run28 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #863399;
+}
+.svg-on-the-run29 {
+    clip-path: url(#SVGID_14_);
+}
+.svg-on-the-run30 {
+    clip-path: url(#SVGID_16_);
+}
+.svg-on-the-run31 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #6cca98;
+}
+.svg-on-the-run32 {
+    clip-path: url(#SVGID_18_);
+}
+.svg-on-the-run33 {
+    clip-path: url(#SVGID_20_);
+}
+.svg-on-the-run34 {
+    clip-path: url(#SVGID_22_);
+}
+.svg-on-the-run35 {
+    opacity: 0.41;
+}
+.svg-on-the-run36 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+.svg-on-the-run37 {
+    fill: none;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+.svg-on-the-run38 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #fa9a86;
+}
+.svg-on-the-run39 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #b884c1;
+}
+.svg-on-the-run40 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #ffdd92;
+}
+
+.svg-review11 {
+    fill: #ffffff;
+}
+.svg-review12 {
+    fill: $yellow;
+}
+
+.svg-review13 {
+    fill: $orange;
+}
+
+.svg-testimonial-lower-left-corner {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: $muted-blue;
+}
+
+.svg-testimonial-upper-right-corner {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: $muted-blue;
+}
