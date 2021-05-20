@@ -90,7 +90,7 @@
                     <ul>
                         @foreach ($flmarkets as $flmarket)
                             <li>
-                                <a href="{{ url($flmarket->path) }}">{{ $flmarket->name}}, {{ $flmarket->state}}</a>
+                                <a href="{{ url($flmarket->path) }}">{{ $flmarket->name}}, {{ $flmarket->state->title }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -102,7 +102,7 @@
                     <ul>
                         @foreach ($midmarkets as $midmarket)
                             <li>
-                                <a href="{{ url($midmarket->path) }}">{{ $midmarket->name}}, {{ $midmarket->state}}</a>
+                                <a href="{{ url($midmarket->path) }}">{{ $midmarket->name}}, {{ $midmarket->state->title }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -114,7 +114,7 @@
                     <ul>
                         @foreach ($nemarkets as $nemarket)
                             <li>
-                                <a href="{{ url($nemarket->path) }}">{{ $nemarket->name}}, {{ $nemarket->state}}</a>
+                                <a href="{{ url($nemarket->path) }}">{{ $nemarket->name}}, {{ $nemarket->state->title }}</a>
                             </li>
                         @endforeach
                     </ul>
