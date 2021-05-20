@@ -3,6 +3,11 @@
 /node_modules
 /public/hot
 /public/storage
+/public/css
+/public/js
+/public/sitemap.xml
+/public/main_sitemap.xml
+/public/blog_sitemap.xml
 /storage/*.key
 /vendor
 .env
@@ -14,3 +19,4 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+composer.lock

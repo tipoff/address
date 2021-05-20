@@ -1,0 +1,231 @@
+.tger-map {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-bottom: -170px;
+    margin-top: 60px;
+    @media (max-width: 767px) {
+        // background-position: 50% 150px;
+    }
+    @media (max-width: 575px) {
+        // background-position: 50% 80px;
+    }
+
+    &__top {
+        border-left: 1300px solid $white;
+        border-top: 0px solid transparent;
+        border-bottom: 100px solid transparent;
+    }
+
+    &__bottom {
+        border-right: 1300px solid $white;
+        border-top: 100px solid transparent;
+        border-bottom: 0px solid transparent;
+    }
+
+    &__box {
+        background-color: $white;
+        position: absolute;
+        top: 47%;
+        left: 25%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.5);
+        @media (max-width: 767px) {
+            top: 25%;
+            left: 50%;
+        }
+        @media (max-width: 575px) {
+            width: 300px;
+        }
+
+        .map-box-inner {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            .map-box-left {
+                padding: 0 10px;
+                transition: all 0.5s;
+                @media (max-width: 575px) {
+                    padding: 0;
+                    flex: 1;
+                }
+
+                h5 {
+                    margin-bottom: 5px;
+                    font-size: 15px;
+                    font-family: $font3;
+                    font-weight: 900;
+                    color: $black;
+                }
+
+                small {
+                    font-size: 12px;
+                    display: block;
+                    padding: 5px 0;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    &.map-address {
+                        color: $light-dark;
+                        font-family: $font2;
+                        transition: all 0.5s;
+                        padding: 0;
+                    }
+
+                    &.map-rating-stars {
+                        display: flex;
+                        align-items: center;
+
+                        .map-rating {
+                            color: $orange;
+                            font-family: $font2;
+                            font-weight: 800;
+                            font-size: 13px;
+                            @media (max-width: 575px) {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .map-stars {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 7px;
+
+                            svg.review-star {
+                                width: 15px;
+                                height: 15px;
+                                @media (max-width: 575px) {
+                                    width: 12px;
+                                    height: 12px;
+                                }
+                            }
+                        }
+
+                        .map-reviews {
+                            color: $blue;
+                            font-family: $font2;
+                            transition: all 0.5s;
+                            font-size: 13px;
+                            @media (max-width: 575px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    &.map-larger-map {
+                        color: $blue;
+                        font-family: $font2;
+                        transition: all 0.5s;
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    transition: all 0.5s;
+
+                    h5 {
+                        text-decoration: none;
+                    }
+
+                    small {
+                        &.map-larger-map,
+                        .map-reviews {
+                            color: $muted-blue;
+                            text-decoration: underline;
+                            transition: all 0.5s;
+                        }
+
+                        .map-rating,
+                        .map-stars {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .map-box-right {
+                text-align: center;
+                padding: 0 10px;
+                color: $blue;
+                transition: all 0.5s;
+                @media (max-width: 575px) {
+                    padding: 0;
+                }
+
+                svg {
+                    color: $blue;
+                    transition: all 0.5s;
+                }
+
+                small {
+                    font-size: 14px;
+                    font-family: $font2;
+                    display: block;
+                }
+
+                &:hover {
+                    color: $muted-blue;
+                    text-decoration: none;
+                    transition: all 0.5s;
+
+                    svg {
+                        transform: scale(1.1);
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tger-cta {
+    position: relative;
+
+    &__top {
+        border-right: 1300px solid $purple;
+        border-top: 100px solid transparent;
+        border-bottom: 0px solid transparent;
+    }
+
+    &__bottom {
+        border-left: 1300px solid $purple;
+        border-top: 0px solid transparent;
+        border-bottom: 100px solid transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__container {
+        background-color: $purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+        @media (max-width: 991px) {
+            padding: 30px 0 0px;
+        }
+        @media (max-width: 575px) {
+            padding: 60px 0 0px;
+        }
+
+        h3 {
+            color: $white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tger-button-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
