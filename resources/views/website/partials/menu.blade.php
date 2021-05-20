@@ -1135,7 +1135,7 @@
                             </h6>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 @foreach ($navmarkets as $navmarket)
-                                    <a class="dropdown-item" href="{{ url($navmarket->path) }}">{{ $navmarket->name}}, {{ $navmarket->state}}</a>
+                                    <a class="dropdown-item" href="{{ url($navmarket->path) }}">{{ $navmarket->name}}, {{ $navmarket->state->title }}</a>
                                 @endforeach
                             </div>
                         </section>

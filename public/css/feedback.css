@@ -1,0 +1,91 @@
+:root{
+}
+
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior:smooth;
+  }
+}
+
+@-webkit-keyframes progress-bar-stripes{
+  0%{
+    background-position-x:1rem;
+  }
+}
+
+@keyframes progress-bar-stripes{
+  0%{
+    background-position-x:1rem;
+  }
+}
+
+@-webkit-keyframes spinner-border{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spinner-border{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinner-grow{
+  0%{
+    transform:scale(0);
+  }
+  50%{
+    opacity:1;
+    transform:none;
+  }
+}
+
+@keyframes spinner-grow{
+  0%{
+    transform:scale(0);
+  }
+  50%{
+    opacity:1;
+    transform:none;
+  }
+}
+:root{
+  --bs-font-sans-serif:"Rubik", sans-serif;
+}
+
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior:smooth;
+  }
+}
+
+@keyframes progress-bar-stripes{
+  0%{
+    background-position-x:1rem;
+  }
+}
+
+@keyframes spinner-border{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spinner-grow{
+  0%{
+    transform:scale(0);
+  }
+  50%{
+    opacity:1;
+    transform:none;
+  }
+}
