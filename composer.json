@@ -32,7 +32,9 @@
         "tipoff/taxes": "^2.2.1",
         "tipoff/vouchers": "^2.4.0",
         "tipoff/waivers": "^2.1.1",
-	    "tipoff/reviews": "^2.2.1"
+	      "tipoff/reviews": "^2.2.1",
+        "tipoff/addresses": "^2.9.1",
+        "tipoff/scheduler": "^2.0.1"
     },
     "require-dev": {
         "facade/ignition": "^2.8.3",
