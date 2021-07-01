@@ -23,7 +23,7 @@
 	      "drewroberts/blog": "^4.5.4",
 	      "tipoff/escape-room": "^2.3.4",
         "tipoff/locations": "^2.12.0",
-        "tipoff/scheduler": "^2.0.1",
+        "tipoff/scheduler": "^2.0.1"
     },
     "require-dev": {
         "facade/ignition": "^2.8.3",
